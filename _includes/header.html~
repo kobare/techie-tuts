@@ -2,7 +2,7 @@
 <!-- Header -->
 <header id="header">
  <div class="logo"><a href="/" class="logo">
-  <img src="{{/assets/img/logo.jpg}}" alt="" /></a></div>
+  <img src={{"/assets/img/logo.jpg"}} alt="" /></a></div>
    <ul class="icons">
     <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
