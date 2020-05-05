@@ -20,21 +20,21 @@
     <li>
      <span class="opener">Submenu</span>
       <ul>
-       <li><a href="#">Lorem Dolor</a></li>
-       <li><a href="#">Ipsum Adipiscing</a></li>
-       <li><a href="#">Tempus Magna</a></li>
-       <li><a href="#">Feugiat Veroeros</a></li>
+       <li><a href="#">Linux</a></li>
+       <li><a href="#">Ruby</a></li>
+       <li><a href="#">Angular</a></li>
+       <li><a href="#">Ruby On Rails</a></li>
       </ul>
     </li>
-    <li><a href="#">Etiam Dolore</a></li>
-    <li><a href="#">Adipiscing</a></li>
+    <li><a href="#">Jekyll</a></li>
+    <li><a href="#">Ionic Apps</a></li>
     <li>
      <span class="opener">Another Submenu</span>
       <ul>
-       <li><a href="#">Lorem Dolor</a></li>
-       <li><a href="#">Ipsum Adipiscing</a></li>
-       <li><a href="#">Tempus Magna</a></li>
-       <li><a href="#">Feugiat Veroeros</a></li>
+       <li><a href="#">Linux</a></li>
+       <li><a href="#">Ruby</a></li>
+       <li><a href="#">Angular</a></li>
+       <li><a href="#">Ruby On Rails</a></li>
       </ul>
     </li>
    </ul>
@@ -73,7 +73,7 @@
    </header>
    <p>Forward your inquiries or suggestions to:</p>
    <ul class="contact">
-    <li class="icon solid fa-envelope"><a href="#">dkobare@gmail.com</a></li>
+    <li class="icon solid fa-envelope"><a href="#">dkobare@techietuts.com</a></li>
    </ul>
    <ul class="icons">
      <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
