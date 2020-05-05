@@ -22,12 +22,13 @@ title: Techie Tuts
 email: dkobare@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A site for tech and programming tutorials. Learn fullstack development and cross-platform apps with Ruby, Ruby on Rails, HTML, CSS, JavaScript, Angular and Ionic. 
-baseurl: "/techie-tuts" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 permalink: ":title/"
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 url:
 twitter_username: kobare
 github_username:  kobare
+discus_identifier: benjaminkobare
 
 # Build settings
 #theme: minima

@@ -28,6 +28,8 @@ permalink: ":title/"
 url:
 twitter_username: kobare
 github_username:  kobare
+discus_identifier: benjaminkobare
+mailchimp: github.us8.list-manage.com/subscribe/post?u=59f41437739e3691e8b775c88&amp;id=6ac77103af
 
 # Build settings
 #theme: minima

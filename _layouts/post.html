@@ -6,3 +6,8 @@ layout: default
                 <!-- Page content object inserted below -->
         {{page.content | markdownify}}
 </section>
+<hr>
+<section>
+        {% include newsletter.html %}
+        {% include disqus.html %}
+</section>

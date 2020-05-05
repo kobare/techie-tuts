@@ -2,36 +2,12 @@
 layout: default
 ---
 
-        {% include head.html %}
- <body class="is-preload">
-
-		<!-- Wrapper -->
-  <div id="wrapper">
-
-		<!-- Main -->
-   <div id="main">
-    <div class="inner">
-
-		<!-- Header module inserted below -->
-        {% include header.html %}
-
-		<!-- Content -->
-     <section>
-      <header class="main">
-       <h4>{{page.title}}</h4>
-      </header>
+<section>
                 <!-- Page content object inserted below -->
-        {{ content }}
-     </section>
-    </div> <!-- End of class="inner" -->
-   </div> <!-- End of id="main" -->
-
-		<!-- Sidebar module inserted below -->
-        {% include sidebar.html %}            
-
-  </div> <!-- End of wrapper -->
-
-                <!-- Scripts module inserted below -->
-        {% include javascripts.html %}            
-
- </body>
+        {{page.content | markdownify}}
+</section>
+<hr><hr>
+<section>
+        {% include newsletter.html %}
+        {% include disqus.html %}
+</section>
