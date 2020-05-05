@@ -17,8 +17,6 @@
    <ul>
     <li id="results-container" class="results-search"></li></br>
     <li><a href="/index">Main Page</a></li>
-    <li><a href="generic.html">Generic</a></li>
-    <li><a href="elements.html">Elements</a></li>
     <li>
      <span class="opener">Submenu</span>
       <ul>
@@ -39,29 +37,24 @@
        <li><a href="#">Feugiat Veroeros</a></li>
       </ul>
     </li>
-    <li><a href="#">Maximus Erat</a></li>
-    <li><a href="#">Sapien Mauris</a></li>
-    <li><a href="#">Amet Lacinia</a></li>
    </ul>
   </nav>
 
                 <!-- Section -->
   <section>
    <header class="major">
-    <h2>Ante interdum</h2>
+    <h2>The Blog</h2>
    </header>
    <div class="mini-posts">
     <article>
-     <a href="#" class="image"><img src="{{site.baseurl}}/assets/img/pic07.jpg" alt="" /></a>
-      <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-    </article>
-    <article>
-     <a href="#" class="image"><img src="{{site.baseurl}}/assets/img/pic08.jpg" alt="" /></a>
-      <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-    </article>
-    <article>
-     <a href="#" class="image"><img src="{{site.baseurl}}/assets/img/pic09.jpg" alt="" /></a>
-      <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+      {% for post in site.posts offset:0 limit:3 %} 
+       {% if post.categories contains "ruby-on-rails" %}
+        {% if post.title %}
+        <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="image"><img src="{{site.baseurl}}/assets/img/{{ prepend: site.baseurl | append : post.img}}" alt="" /></a>
+      <p>{{ post.title }}</p>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
     </article>
    </div>
    <ul class="actions">
