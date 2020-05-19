@@ -15,7 +15,7 @@ layout: default
     <th>Tutorial</th>
     <th>Category</th>
     <th>Technology Used</th>
-    <th>Published On</th>
+    <!-- <th>Published On</th> -->
   </tr>
    {% assign tutorial_number = 0 %}
     {% for post in site.posts offset:0 %}
@@ -28,7 +28,7 @@ layout: default
     </td>
     <td>{{post.tutorial_type}}</td>
     <td>{{post.technology}}</td>
-    <td>{{post.date | date_to_long_string}}</td>
+    <!-- <td>{{post.date | date_to_long_string}}</td> -->
   </tr>
     {% endif %}
     {% endfor %}

@@ -17,8 +17,10 @@ layout: default
     <th>Technology Used</th>
     <th>Published On</th>
   </tr>
-{% for post in site.posts offset:0 %}
+   {% assign tutorial_number = 0 %}
+    {% for post in site.posts offset:0 %}
       {% if post.title %}
+      {% assign tutorial_number = tutorial_number | plus:1 %}
   <tr>
     <td>{{tutorial_number}}</td>
     <td>
