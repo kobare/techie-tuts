@@ -4,3 +4,30 @@
 
 layout: default
 ---
+
+ <table>
+  <colgroup>
+    <col span="1" style="background-color:white">
+    <col style="background-color:white">
+  </colgroup>
+  <tr>
+    <th>#</th>
+    <th>Tutorial</th>
+    <th>Category</th>
+    <th>Technology Used</th>
+    <th>Published On</th>
+  </tr>
+{% for post in site.posts offset:0 %}
+      {% if post.title %}
+  <tr>
+    <td>{{tutorial_number}}</td>
+    <td>
+        <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="recent-item"><span>{{ post.title }}</span></a>
+    </td>
+    <td>{{post.tutorial_type}}</td>
+    <td>{{post.technology}}</td>
+    <td>{{post.date | date_to_long_string}}</td>
+  </tr>
+    {% endif %}
+    {% endfor %}
+ </table> 
