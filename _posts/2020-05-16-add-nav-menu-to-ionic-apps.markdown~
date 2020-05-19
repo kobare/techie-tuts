@@ -150,7 +150,7 @@ After adding the above code, you should get a similar menu to the one below:
 
 <img srcset="
   {{baseurl.site}}/assets/img/ionic_side_menu.png 1x, 
-  {{baseurl.site}}/assets/img/ionic_side_menu.jpg 2x
+  {{baseurl.site}}/assets/img/ionic_side_menu.png 2x
 " alt="missing image">
 
 That it's!

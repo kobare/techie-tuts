@@ -127,7 +127,7 @@ Then, we use ngFor to loop inside the array navigate and we use the attribute ur
 
 3). Add the open/close humburger button on your main page and/or on all pages you want. To be able to do that you need to use the component `ion-menu-button` in the html of each page, that will create the button to open a menu on the page.
 
-In this tut, we'll add it in the `home.page.html` file:
+For this tut, we'll add it in the `home.page.html` file:
 
 {% highlight javascript linenos %}
 
