@@ -30,7 +30,7 @@ How can computers exhibit human-like intelligence? What is human intelligence? W
  <br>
 * #### **HUMAN INTELLIGENCE**
 
-  <div align="center"> 
+  <div align="left"> 
      <img srcset="https://images.unsplash.com/photo-1563531090307-fab31bb9fc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80 1x, https://images.unsplash.com/photo-1563531090307-fab31bb9fc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80 2x" alt="missing image"/>
    </div>
 
@@ -45,6 +45,10 @@ Through repetition and a feedback system, it’s beliefs are reinforced and it g
  <br>
  * #### **MODELING HUMAN INTELLIGENCE IN COMPUTERS**
 
+<div align="left"> 
+     <img srcset="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=500 1x, https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2x" alt="missing image">
+   </div> 
+
 An artificially intelligent computer system uses what is called machine learning algorithm to learn.
 
 An algorithm is a computer program that contains a set of instructions that the computer is supposed to execute in the order written. Think of  an algorithm like your great grandma’s food recipe that has been passed down to you. You have to follow those steps without skipping anything if you want to prepare the perfect meal.
@@ -58,11 +62,11 @@ Machine learning is a programming technique that provides systems the ability to
 Just as a child learns through examples, the same is true of computers. The computer’s machine learning algorithm is fed tons of information for example images of traffic. It is taught that, for example, images that have a certain shape and attributes are called vans and others with a certain shape and attributes are called motorbikes. 
 
 Having been taught a little, the algorithm has a bit of understanding about what’s in the traffic images. It is then fed more images and allowed to do the labeling by it’s self. Surprisingly, after the arduous process, it can identify vans and motorbikes from the information with astounding accuracy!
+How was it able to do that?
 
  <br>
 * #### **HOW THE AI ALGORITHM WORKS**
 
-How was it able to do that?
 When it was shown what shape and attributes represented a van and a motorbike, it stored that information in it’s memory and used the same information to group the subsequent images.
 
 For the model to learn and be able to apply the knowledge with high accuracy, it has to be fed a staggering amount of information. Just like you had to go through a lot of experiences in life to posses the wisdom you have today, the AI model has to consume a lot of information to become intelligent.
@@ -75,7 +79,7 @@ For the model to learn and be able to apply the knowledge with high accuracy, it
    </div> 
 
  <br>
-Yes! These technologies already show up in everyday life — helping to organize photos on our smartphones or the car’s navigation system that reroutes you. These are the very basic examples. They take tasks that have historically required considerable human intellect and work through them using computer programming.
+Yes! These technologies already show up in everyday life: helping to organize photos on our smartphones or the car’s navigation system that reroutes you. These are the very basic examples. They take tasks that have historically required considerable human intellect and work through them using computer programming.
 
 
  <br>
