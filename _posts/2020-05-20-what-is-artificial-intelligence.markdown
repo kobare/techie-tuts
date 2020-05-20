@@ -46,7 +46,7 @@ Through repetition and a feedback system, it’s beliefs are reinforced and it g
  * #### **MODELING HUMAN INTELLIGENCE IN COMPUTERS**
 
 <div align="left"> 
-     <img srcset="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=500 1x, https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=300 2x" alt="missing image">
+     <img srcset="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1020&q=80 1x, https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80 2x" alt="missing image">
    </div> 
 
 An artificially intelligent computer system uses what is called machine learning algorithm to learn.
