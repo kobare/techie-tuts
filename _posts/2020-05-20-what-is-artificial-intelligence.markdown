@@ -19,7 +19,7 @@ Have you ever wondered how how Artificial Intelligence works? Do you use this te
 
 
 
-You, yes the reader, are part of Artificial Intelligence and you are playing a big role in the rise of this powerful technology. And you are doing it right now. The moment you searched Google's engines and landed on this article, you contributed to the evolution of Artificial Intelligence.
+You're probably part of Artificial Intelligence and you are playing a big role in the rise of this powerful technology. And you are doing it right now. How? The moment you searched Google's engines and landed on this article, you contributed to the evolution of Artificial Intelligence. Congratulations! You are now officially involved. So read on...
 
  <br>
 * #### **ARTIFICIAL INTELLIGENCE, WHAT IS IT?**
