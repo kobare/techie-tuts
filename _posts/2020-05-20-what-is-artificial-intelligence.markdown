@@ -47,11 +47,14 @@ Through repetition and a feedback system, it’s beliefs are reinforced and it g
 
 <div align="center" style="background-color:#3d4449"> 
      <img srcset="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1020&q=80 1x, https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=660&q=80 2x" alt="missing image">
-   </div> 
-
+   </div>
+ 
+<br>
 An artificially intelligent computer system uses what is called machine learning algorithm to learn.
 
-An algorithm is a computer program that contains a set of instructions that the computer is supposed to execute in the order written. Think of  an algorithm like your great grandma’s food recipe that has been passed down to you. You have to follow those steps without skipping anything if you want to prepare the perfect meal.
+An algorithm is a computer program that contains a set of instructions that the computer is supposed to execute in the order written. 
+
+>Think of  an algorithm as your great grandma’s food recipe that has been passed down to you. You have to follow those steps without skipping anything if you want to prepare the perfect meal.
 
 So then what is machine learning?
 Machine learning is a programming technique that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. This means that computer programs can access data and use it learn for themselves. How so?
