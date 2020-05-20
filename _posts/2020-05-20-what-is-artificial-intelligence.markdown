@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is Artificial Intelligence?"
-date:   2020-05-16 19:22:06 +0300
+date:   2020-05-20 14:00:06 +0300
 img: https://as1.ftcdn.net/jpg/01/95/57/06/500_F_195570681_6MwgykPMSlClarv0or2m3dBqQToCF0fB.jpg
 categories: blog
 technology: Artificial Intelligence
