@@ -30,6 +30,12 @@ How can computers exhibit human-like intelligence? What is human intelligence? W
  <br>
 * #### **HUMAN INTELLIGENCE**
 
+<div align="center"> 
+     <img srcset="https://images.unsplash.com/photo-1563531090307-fab31bb9fc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 1x, https://images.unsplash.com/photo-1563531090307-fab31bb9fc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80 2x" alt="missing image"/>
+   </div>
+
+
+
 Human intelligence is a mental quality that consists of the abilities to learn from experience, adapt to new situations, understand and handle abstract concepts, and use knowledge to manipulate one's environment.
 
 When a child is born, it has no clue about how the world operates. It then begins to learn from it’s environment, accumulates the knowledge through the experience that it happens to go through. It’s guardians give it a name, teach it what is accepted as correct and wrong.
@@ -64,8 +70,8 @@ For the model to learn and be able to apply the knowledge with high accuracy, it
  <br>
 * #### **IS ARTIFICIAL INTELLIGENCE HERE WITH US?**
 
-   <div align="justify"> 
-     <img srcset="https://www.gettingsmart.com/wp-content/uploads/2018/12/artificial-intelligence-education.jpg 1x, https://www.gettingsmart.com/wp-content/uploads/2018/12/artificial-intelligence-education.jpg 3x" alt="missing image">
+   <div align="left"> 
+     <img srcset="https://images.pexels.com/photos/3473411/pexels-photo-3473411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=675 1x, https://images.pexels.com/photos/3473411/pexels-photo-3473411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=300 2x" alt="missing image">
    </div> 
 
  <br>
