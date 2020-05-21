@@ -7,8 +7,6 @@ layout: default
         {{page.content | markdownify}}
 </section>
 <hr><br>
-
-<!--
 <section>
-        {% include disqus.html %} 
-</section>  -->
+       <!-- {% include disqus.html %} -->
+</section>
