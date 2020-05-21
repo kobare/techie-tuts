@@ -10,7 +10,7 @@ tutorial_type: How To
 
 <div align="justify" style="background-color:#fff"> 
 <img srcset="
-  https://www.technouz.com/wp-content/uploads/2017/04/ionic-header.jpg 1x, 
+  https://www.technouz.com/wp-content/uploads/2017/04/ionic-header.jpg 1x,
   https://www.technouz.com/wp-content/uploads/2017/04/ionic-header.jpg 4x
 " alt="missing image">
 </div>

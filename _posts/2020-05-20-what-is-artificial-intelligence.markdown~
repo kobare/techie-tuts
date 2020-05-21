@@ -102,6 +102,6 @@ You don’t have to be scared. Basically, Artificial Intelligence is us. AI at t
 <br>
 *__In the next article, we will talk about the types of machine learning algorithms and where each is applied in our world.__*
 
-*See you on the next tuts and don't forget to subscribe.*
+*See you on the next tuts*
 
 

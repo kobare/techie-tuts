@@ -10,8 +10,9 @@ tutorial_type: How To
 
 <div align="justify" style="background-color:#fff"> 
 <img srcset="
-  https://www.technouz.com/wp-content/uploads/2017/04/ionic-header.jpg 1x, 
-  https://www.technouz.com/wp-content/uploads/2017/04/ionic-header.jpg 4x
+  https://www.technouz.com/wp-content/uploads/2017/04/ionic-header.jpg 1x,
+  https://www.technouz.com/wp-content/uploads/2017/04/ionic-header.jpg 4x,  
+  https://www.technouz.com/wp-content/uploads/2017/04/ionic-header.jpg 3x
 " alt="missing image">
 </div>
 <br>
@@ -163,6 +164,6 @@ After adding the above code, you should get a similar menu to the one below:
 
 That it's!
 
-See you on the next tuts and don't forget to subscribe.
+*See you on the next tuts*
 
 
