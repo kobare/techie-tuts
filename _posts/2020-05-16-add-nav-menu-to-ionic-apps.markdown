@@ -163,6 +163,6 @@ After adding the above code, you should get a similar menu to the one below:
 
 That it's!
 
-See you on the next tuts and don't forget to subscribe.
+*See you on the next tuts*
 
 
