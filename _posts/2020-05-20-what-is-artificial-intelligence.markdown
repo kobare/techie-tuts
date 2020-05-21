@@ -90,7 +90,7 @@ Yes! These technologies already show up in everyday life: helping to organize ph
  <br>
 #### **CONCLUSION**
 
-We are living in the information age. Now more than ever, we have access to more information than we know what to do with thanks to the internet. Every second you spend using a piece of computer powered technology that’s connected to the internet, you are giving birth to more information. More information means more fuel for Artificial Intelligence.
+We are living in the information age. Now more than ever, we have access to more information than we know what to do with thanks to the internet. Every second you spend using a piece of computer powered technology that’s connected to the internet, you're essentially producing more information. More information means more fuel for Artificial Intelligence.
 
 This is the beginning of a new era. Artificial Intelligence is already opening doors to infinite possibilities. Some people say that Artificial Intelligence is probably humans final invention. 
 
