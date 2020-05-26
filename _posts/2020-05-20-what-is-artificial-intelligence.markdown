@@ -2,7 +2,7 @@
 layout: post
 title:  "What is Artificial Intelligence?"
 date:   2020-05-20 14:00:06 +0300
-img: https://as1.ftcdn.net/jpg/01/95/57/06/500_F_195570681_6MwgykPMSlClarv0or2m3dBqQToCF0fB.jpg
+img: https://cdn.pixabay.com/photo/2018/10/28/01/56/evolution-3777724_960_720.jpg
 categories: blog
 technology: Artificial Intelligence
 tutorial_type: Article (Tech)
@@ -10,14 +10,14 @@ tutorial_type: Article (Tech)
 
 
 
-Have you ever wondered how how Artificial Intelligence works? Do you use this technology in your daily life without even realizing it?
+
 
    <div align="center" style="background-color:#fff"> 
-     <img srcset="https://as1.ftcdn.net/jpg/01/95/57/06/500_F_195570681_6MwgykPMSlClarv0or2m3dBqQToCF0fB.jpg 1x, https://as1.ftcdn.net/jpg/01/95/57/06/500_F_195570681_6MwgykPMSlClarv0or2m3dBqQToCF0fB.jpg 2x" alt="missing image"/>
+     <img srcset="https://cdn.pixabay.com/photo/2018/10/28/01/56/evolution-3777724_960_720.jpg 1x, https://cdn.pixabay.com/photo/2018/10/28/01/56/evolution-3777724_960_720.jpg 3x" alt="missing image"/>
    </div> 
 
 
-
+Have you ever wondered how how Artificial Intelligence works? Do you use this technology in your daily life without even realizing it?
 
 You're probably part of Artificial Intelligence and you are playing a big role in the rise of this powerful technology. And you are doing it right now. How? You may ask.
 
@@ -32,7 +32,7 @@ How can computers exhibit human-like intelligence? What is human intelligence? W
  <br>
 * #### **HUMAN INTELLIGENCE**
 
-  <div align="center" style="background-color:#3d4449"> 
+  <div align="center" style="background-color:#000"> 
      <img srcset="https://images.unsplash.com/photo-1563531090307-fab31bb9fc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80 1x, https://images.unsplash.com/photo-1563531090307-fab31bb9fc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 2x" alt="missing image"/>
    </div>
 
@@ -47,7 +47,7 @@ Through repetition and a feedback system, it’s beliefs are reinforced and it g
  <br>
  * #### **MODELING HUMAN INTELLIGENCE IN COMPUTERS**
 
-<div align="center" style="background-color:#3d4449"> 
+<div align="center" style="background-color:#000"> 
      <img srcset="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1020&q=80 1x, https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=660&q=80 2x" alt="missing image">
    </div>
  
@@ -79,7 +79,7 @@ For the model to learn and be able to apply the knowledge with high accuracy, it
  <br>
 * #### **IS ARTIFICIAL INTELLIGENCE HERE WITH US?**
 
-   <div align="center" style="background-color:#3d4449"> 
+   <div align="center" style="background-color:#000"> 
      <img srcset="https://images.pexels.com/photos/3473411/pexels-photo-3473411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=500 1x, https://images.pexels.com/photos/3473411/pexels-photo-3473411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=300 2x" alt="missing image">
    </div> 
 
@@ -89,6 +89,12 @@ Yes! These technologies already show up in everyday life: helping to organize ph
 
  <br>
 #### **CONCLUSION**
+
+<div align="center" style="background-color:#000"> 
+     <img srcset="https://cdn.pixabay.com/photo/2018/03/26/13/48/artificial-intelligence-3262753_960_720.jpg 1x, https://cdn.pixabay.com/photo/2018/03/26/13/48/artificial-intelligence-3262753_960_720.jpg 3x" alt="missing image"/>
+   </div>
+<br>
+
 
 We are living in the information age. Now more than ever, we have access to more information than we know what to do with thanks to the internet. Every second you spend using a piece of computer powered technology that’s connected to the internet, you're essentially producing more information. More information means more fuel for Artificial Intelligence.
 
