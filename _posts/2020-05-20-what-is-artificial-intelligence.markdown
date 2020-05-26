@@ -48,7 +48,7 @@ Through repetition and a feedback system, it’s beliefs are reinforced and it g
  * #### **MODELING HUMAN INTELLIGENCE IN COMPUTERS**
 
 <div align="center" style="background-color:#000"> 
-     <img srcset="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1020&q=80 1x, https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=660&q=80 2x" alt="missing image">
+     <img srcset="https://cdn.pixabay.com/photo/2017/03/23/09/34/robot-2167836_960_720.jpg 1x, https://cdn.pixabay.com/photo/2017/03/23/09/34/robot-2167836_960_720.jpg 3x" alt="missing image">
    </div>
  
 <br>
