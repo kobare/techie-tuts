@@ -23,12 +23,12 @@ email: dkobare@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A site for tech and programming tutorials. Learn fullstack development and cross-platform apps with Ruby, Ruby on Rails, HTML, CSS, JavaScript, Angular and Ionic. 
 baseurl: "" # the subpath of your site, e.g. /blog
-permalink: ":title/"
+permalink: ""
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 url:
 twitter_username: kobare
 github_username:  kobare
-discus_identifier: benjaminkobare
+discus_identifier: admin11
 mailchimp: github.us8.list-manage.com/subscribe/post?u=59f41437739e3691e8b775c88&amp;id=6ac77103af
 
 # Build settings
@@ -56,4 +56,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-highlighter: rouge
+
