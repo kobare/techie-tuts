@@ -48,7 +48,7 @@
    <div class="mini-posts">
     <article>
       {% for post in site.posts offset:0 limit:3 %} 
-       {% if post.categories contains "blog" %}
+       {% if post.categories contains "blogs" %}
         {% if post.title %}
         <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="image"><img src="{{post.img}}" alt="" /></a>
       <p>{{ post.title }}</p>
