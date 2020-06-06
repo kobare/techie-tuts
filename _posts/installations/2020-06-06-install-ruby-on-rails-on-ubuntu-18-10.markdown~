@@ -48,7 +48,7 @@ In this tutorial we are going to set up Ruby and Ruby on Rails development envir
 
 <div class="window">
   <div class="terminal">
-    <h4>#1. install rbenv.</h4>
+    <h4>#1. Install rbenv.</h4>
     <p class="command">cd</p>
  
     <p class="command">git clone https://github.com/rbenv/rbenv.git ~/.rbenv</p>

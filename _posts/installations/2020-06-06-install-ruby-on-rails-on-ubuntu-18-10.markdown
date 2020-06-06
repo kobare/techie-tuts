@@ -68,6 +68,8 @@ In this tutorial we are going to set up Ruby and Ruby on Rails development envir
 
     <p class="command">rbenv install 2.7.1</p>
 
+    <p class="command">rbenv rehash</p>
+
     <p class="command">rbenv global 2.7.1</p>
 
     <h4># Verify Ruby version</h4>
