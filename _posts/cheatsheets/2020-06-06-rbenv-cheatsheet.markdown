@@ -8,8 +8,6 @@ technology: Ruby/rbenv
 tutorial_type: Cheat
 ---
 
-<link rel="stylesheet" type="text/css" media="all" href="{{site.basurl}}/assets/css/terminal_style.css" />
-
 <div align="center" style="background-color:#B22222"> 
 <img srcset="
   https://drive.google.com/uc?id=1iW42TfZZQnPVwxPhMBnoH_IgiPCnodFv 1x,

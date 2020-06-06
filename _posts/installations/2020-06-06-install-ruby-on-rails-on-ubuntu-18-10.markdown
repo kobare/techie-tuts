@@ -8,8 +8,6 @@ technology: Ruby/Rails
 tutorial_type: How To
 ---
 
-<link rel="stylesheet" type="text/css" media="all" href="{{site.basurl}}/assets/css/terminal_style.css" />
-
 <div align="center" style="background-color:#B22222"> 
 <img srcset="
   https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa 3x,
