@@ -44,7 +44,7 @@ Git is used as a version control system. In this tutorial we are going to set up
 <br>
 
 <h4 align="center" >STEP 2: <h5 align="center" >Copy the generated SSH key and add it to your Github repository</h5></h4>
- You do that by opening your repository, go to the settings menu of that repository. Then click deploy keys, click add and paste the key.
+ You do that by opening your repository, go to the `settings` menu of that repository. Then click `deploy keys`, click `add` and paste the key.
 
 
 That's it!
