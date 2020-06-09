@@ -291,8 +291,8 @@ After adding the above code, you should get a similar menu to the one below:
   {{baseurl.site}}/assets/img/ionic_custom_styled_side_menu.png 2x
 " alt="missing image">
 
-That it's!
+That's it!
 
-*See you on the next tuts*
+*See you in the next tuts*
 
 

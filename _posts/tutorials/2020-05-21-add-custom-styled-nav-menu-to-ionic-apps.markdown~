@@ -115,7 +115,7 @@ Step 3: Just like in Step 2 above, open `sidemenu.component.html` and replace th
 
 <div class="header">
 	<div class="logo">
-		QurLearn
+	 📕️ QurLearn
 	</div>
 </div>
 
@@ -291,7 +291,7 @@ After adding the above code, you should get a similar menu to the one below:
   {{baseurl.site}}/assets/img/ionic_custom_styled_side_menu.png 2x
 " alt="missing image">
 
-That it's!
+That's it!
 
 *See you on the next tuts*
 

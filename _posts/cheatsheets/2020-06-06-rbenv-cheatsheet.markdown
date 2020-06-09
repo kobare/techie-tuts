@@ -61,8 +61,8 @@ tutorial_type: Cheat
 
 
 
-That it's!
+That's it!
 
-*See you on the next tuts*
+*See you in the next tuts*
 
 

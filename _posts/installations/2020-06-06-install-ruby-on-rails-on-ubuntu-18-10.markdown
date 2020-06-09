@@ -105,8 +105,8 @@ In this tutorial we are going to set up Ruby and Ruby on Rails development envir
 
 
 
-That it's!
+That's it!
 
-*See you on the next tuts*
+*See you in the next tuts*
 
 

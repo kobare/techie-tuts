@@ -67,8 +67,8 @@ Paste the output of the above command [here](https://github.com/settings/ssh){:t
 <br>
 
 
-That it's!
+That's it!
 
-*See you on the next tuts*
+*See you in the next tuts*
 
 
