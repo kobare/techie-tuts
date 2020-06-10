@@ -49,7 +49,7 @@ Use each instead of a for when iterating through a collection. It is simply more
     ...
   end
 
-{% endhighlight %} 
+{% endhighlight %}  
 
 <br>
 #### 3. Conditionals: Use unless Instead of !if:
