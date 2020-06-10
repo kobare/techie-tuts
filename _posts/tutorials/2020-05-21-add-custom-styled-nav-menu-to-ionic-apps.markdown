@@ -284,7 +284,7 @@ Step 7: Replace the code in `app.component.html` with the code below
 
 
 
-After adding the above code, you should get a similar menu to the one below:
+After adding the above code, you should get a menu similar to the one below:
 
 <img srcset="
   {{baseurl.site}}/assets/img/ionic_custom_styled_side_menu.png 1x, 

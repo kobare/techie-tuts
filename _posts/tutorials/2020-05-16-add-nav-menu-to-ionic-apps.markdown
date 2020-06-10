@@ -154,7 +154,7 @@ For this tut, we'll add it in the `home.page.html` file:
 
 
 
-After adding the above code, you should get a similar menu to the one below:
+After adding the above code, you should get a menu similar to the one below:
 
 <img srcset="
   {{baseurl.site}}/assets/img/ionic_side_menu.png 1x, 
