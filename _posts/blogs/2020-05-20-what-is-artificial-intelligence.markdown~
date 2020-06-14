@@ -3,7 +3,7 @@ layout: post
 title:  "What is Artificial Intelligence?"
 date:   2020-05-20 14:00:06 +0300
 img: https://cdn.pixabay.com/photo/2018/10/28/01/56/evolution-3777724_960_720.jpg
-categories: blogs
+categories: blog
 technology: Artificial Intelligence
 tutorial_type: Article (Tech)
 ---
@@ -13,7 +13,10 @@ tutorial_type: Article (Tech)
 
 
    <div align="center" style="background-color:#fff"> 
-     <img srcset="https://cdn.pixabay.com/photo/2018/10/28/01/56/evolution-3777724_960_720.jpg 1x, https://cdn.pixabay.com/photo/2018/10/28/01/56/evolution-3777724_960_720.jpg 3x" alt="missing image"/>
+     <img srcset="
+  https://drive.google.com/uc?id=1w_FTmQoORi08yzHfTiJMRl0XjO_N3mCO 1x,
+  https://drive.google.com/uc?id=1w_FTmQoORi08yzHfTiJMRl0XjO_N3mCO 3x
+" alt="missing image">
    </div> 
 
 
@@ -33,7 +36,10 @@ How can computers exhibit human-like intelligence? What is human intelligence? W
 * #### **HUMAN INTELLIGENCE**
 
   <div align="center" style="background-color:#000"> 
-     <img srcset="https://images.unsplash.com/photo-1563531090307-fab31bb9fc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80 1x, https://images.unsplash.com/photo-1563531090307-fab31bb9fc93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80 2x" alt="missing image"/>
+     <img srcset="
+  https://drive.google.com/uc?id=11qlBDv2pEcKNXGudIAPRFecrTj0UzHeP 1x,
+  https://drive.google.com/uc?id=11qlBDv2pEcKNXGudIAPRFecrTj0UzHeP 3.5x
+" alt="missing image">
    </div>
 
 
@@ -48,7 +54,10 @@ Through repetition and a feedback system, it’s beliefs are reinforced and it g
  * #### **MODELING HUMAN INTELLIGENCE IN COMPUTERS**
 
 <div align="center" style="background-color:#000"> 
-     <img srcset="https://cdn.pixabay.com/photo/2017/03/23/09/34/robot-2167836_960_720.jpg 1x, https://cdn.pixabay.com/photo/2017/03/23/09/34/robot-2167836_960_720.jpg 3x" alt="missing image">
+     <img srcset="
+  https://drive.google.com/uc?id=1xnrq1wO3PFcQ8d0huDGP7Dtwj6gsMW-A 1x,
+  https://drive.google.com/uc?id=1xnrq1wO3PFcQ8d0huDGP7Dtwj6gsMW-A 3x
+" alt="missing image">
    </div>
  
 <br>
@@ -80,7 +89,10 @@ For the model to learn and be able to apply the knowledge with high accuracy, it
 * #### **IS ARTIFICIAL INTELLIGENCE HERE WITH US?**
 
    <div align="center" style="background-color:#000"> 
-     <img srcset="https://images.pexels.com/photos/3473411/pexels-photo-3473411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=500 1x, https://images.pexels.com/photos/3473411/pexels-photo-3473411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=300 2x" alt="missing image">
+     <img srcset="
+  https://drive.google.com/uc?id=1JxkR1_WSa3bItDkTRdrtlKy4-3l0Cj2B 1x,
+  https://drive.google.com/uc?id=1JxkR1_WSa3bItDkTRdrtlKy4-3l0Cj2B 3.5x
+" alt="missing image">
    </div> 
 
  <br>
@@ -91,7 +103,10 @@ Yes! These technologies already show up in everyday life: helping to organize ph
 #### **CONCLUSION**
 
 <div align="center" style="background-color:#000"> 
-     <img srcset="https://cdn.pixabay.com/photo/2018/03/26/13/48/artificial-intelligence-3262753_960_720.jpg 1x, https://cdn.pixabay.com/photo/2018/03/26/13/48/artificial-intelligence-3262753_960_720.jpg 3x" alt="missing image"/>
+     <img srcset="
+  https://drive.google.com/uc?id=1JxkR1_WSa3bItDkTRdrtlKy4-3l0Cj2B 1x,
+  https://drive.google.com/uc?id=1JxkR1_WSa3bItDkTRdrtlKy4-3l0Cj2B 3.5x
+" alt="missing image">
    </div>
 <br>
 

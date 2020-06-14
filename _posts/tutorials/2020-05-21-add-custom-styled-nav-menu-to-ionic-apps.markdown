@@ -10,8 +10,8 @@ tutorial_type: How To
 
 <div align="justify" style="background-color:#fff"> 
 <img srcset="
-  https://ionicframework.com/blog/wp-content/uploads/2015/07/ionic-meta.jpg 1x,
-  https://ionicframework.com/blog/wp-content/uploads/2015/07/ionic-meta.jpg 4x
+  https://drive.google.com/uc?id=1F9NWzVPs-qypOVgC3YHsXYWoH1PBduTY 1x,
+  https://drive.google.com/uc?id=1F9NWzVPs-qypOVgC3YHsXYWoH1PBduTY 4x,
 " alt="missing image">
 </div>
 <br>
@@ -287,8 +287,8 @@ Step 7: Replace the code in `app.component.html` with the code below
 After adding the above code, you should get a menu similar to the one below:
 
 <img srcset="
-  {{baseurl.site}}/assets/img/ionic_custom_styled_side_menu.png 1x, 
-  {{baseurl.site}}/assets/img/ionic_custom_styled_side_menu.png 2x
+  https://drive.google.com/uc?id=1LQHT-maujccbkcgdt3J5XZSmH6b_JyIe 1x,
+  https://drive.google.com/uc?id=1LQHT-maujccbkcgdt3J5XZSmH6b_JyIe 2x,
 " alt="missing image">
 
 That's it!
