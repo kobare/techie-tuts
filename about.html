@@ -4,34 +4,31 @@ layout: default
 <!-- Banner -->
 <section id="banner">
 
- <div class="content">
-  <header>
-   <h1>Welcome to<br />
-   Techietuts!</h1>
-   <p>We're learning through action</p>
-  </header>
-  <p>"Practical knowledge is very important to understand how things actually work. As it occurs and develops in those concrete situations where it is learnt, it is contextual and social in nature and helps you acquire the specific techniques that become the tools of your trade."</p>
-  <ul class="actions">
-   <li><a href="{{ root_url }}/table_of_contents" class="button big">Table of Contents</a></li>
-  </ul>
- </div>
-
  <span class="image object">
  <img srcset="
-  https://drive.google.com/uc?id=1jVtOgfom9B2tcBvnzmAe2fHPSbuo3MGv 1x,
-  https://drive.google.com/uc?id=1jVtOgfom9B2tcBvnzmAe2fHPSbuo3MGv 2x
+  https://drive.google.com/uc?id=1iTR0wzyTrU6aTTGeaGlMkkxZBtRg8hyX 4x,
+  https://drive.google.com/uc?id=1iTR0wzyTrU6aTTGeaGlMkkxZBtRg8hyX 5x
 " alt="missing image">
  </span>
 
-</section>
+ <div class="content">
+  <header>
+   <h2>Hi, I’m Denis Kobare<br />
+   a fullstack software engineer</h2>
+   <p>On this site, I share my programming odyssey</p>
+  </header>
+  <p>As I prepare a proper "About" page, let me briefly introduce myself.<br>Well, I'm a programmer by profession. 80% self-taught, I would say.<br>The purpose of this site is to share what I learn and to also serve as a documentation for my projects. <br>I hope you find value on here</p>
+  <ul class="actions">
+   <li><a href="#" class="button big">Read More</a></li>
+  </ul>
+ </div>
 
-<hr>
-<br>
+</section>
 
 <!-- Section -->
 <section>
  <header class="major">
-  <h2>Our Tech Stack</h2>
+  <h2>My Knowledge Stack</h2>
  </header>
 
  <div class="features">
@@ -106,42 +103,6 @@ layout: default
      <p>JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Incorporating JavaScript improves the user experience of the web page by converting it from a static page into an interactive one. To recap, JavaScript adds behavior to web pages.</p>
    </div>
   </article>
-
- </div>
-
-</section>
-
-
-<br>
-<hr>
-<br>
-
-
-<!-- Section -->
-<section>
- <header class="major">
-  <h2>Recent Tutorials</h2>
- </header>
-
- <div class="posts">
-   {% for post in site.posts offset:0 %}
-   {% if post.title %}
-  <article>
-   <a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="image">
-    <img srcset="
-     {{post.img 1x}},
-     {{post.img 2x}}
-" alt="missing image">
-   </a>
-
-   <h3>{{post.title}}</h3>
-    <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
-   <ul class="actions">
-    <li><a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}" class="button">More</a></li>
-   </ul>
-  </article>
-   {% endif %}
-   {% endfor %}
 
  </div>
 

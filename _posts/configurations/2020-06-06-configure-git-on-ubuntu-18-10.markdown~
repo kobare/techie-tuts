@@ -42,7 +42,7 @@ Git is used as a version control system. In this tutorial we are going to set it
 
 <div class="window">
   <div class="terminal">
-    <h4># Copy SSH key. This command copies your SSH key.</h4>
+    <h4># Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.</h4>
     <p class="command">cat ~/.ssh/id_rsa.pub</p>
   </div>
 </div>

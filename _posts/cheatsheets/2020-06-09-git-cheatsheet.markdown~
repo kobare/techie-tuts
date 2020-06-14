@@ -34,9 +34,6 @@ Git is used as a version control system. If you don't already have a Github acco
 <br>
 
 
-git@github.com:kobare/techie-tuts.git
-
-
 That's it!
 
 *See you in the next tuts*

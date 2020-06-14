@@ -2,7 +2,7 @@
 layout: post
 title:  "Install Ruby On Rails on Ubuntu 18.10 Cosmic Canimal"
 date:   2020-06-06 14:17:06 +0300
-img: ionic_side_menu.png
+img: https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa
 categories: installations
 technology: Ruby/Rails
 tutorial_type: How To

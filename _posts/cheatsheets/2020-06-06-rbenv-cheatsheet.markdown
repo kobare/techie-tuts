@@ -2,7 +2,7 @@
 layout: post
 title:  "rbenv Cheat Sheet"
 date:   2020-06-06 14:17:06 +0300
-img: ionic_side_menu.png
+img: https://drive.google.com/uc?id=1iW42TfZZQnPVwxPhMBnoH_IgiPCnodFv
 categories: cheatsheets
 technology: Ruby/rbenv
 tutorial_type: Cheat

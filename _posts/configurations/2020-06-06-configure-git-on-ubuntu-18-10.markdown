@@ -2,7 +2,7 @@
 layout: post
 title:  "Configure Git on Ubuntu 18.10 Cosmic Canimal"
 date:   2020-06-06 14:17:06 +0300
-img: ionic_side_menu.png
+img: https://drive.google.com/uc?id=1JXnK4HNIJivvw_BuzpMZXKprxALKKNx3
 categories: configurations
 technology: Github/Git
 tutorial_type: How To

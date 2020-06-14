@@ -2,6 +2,7 @@
 layout: post
 title:  "Upgrade Ubuntu"
 date:   2020-06-13 14:22:00 +0300
+img: https://drive.google.com/uc?id=1OYNUMOx_DxtCedG50i_Qt7zkdThk4m_K
 categories: installations
 technology: Linux/Ubuntu
 tutorial_type: How To

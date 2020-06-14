@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Add Custom Styled Navigation Menu to Ionic Apps"
 date:   2020-05-16 19:22:06 +0300
-img: ionic_side_menu.png
+img: https://drive.google.com/uc?id=1F9NWzVPs-qypOVgC3YHsXYWoH1PBduTY
 categories: ionic_apps
 technology: Ionic/Angular Apps
 tutorial_type: How To
@@ -288,7 +288,7 @@ After adding the above code, you should get a menu similar to the one below:
 
 <img srcset="
   https://drive.google.com/uc?id=1LQHT-maujccbkcgdt3J5XZSmH6b_JyIe 1x,
-  https://drive.google.com/uc?id=1LQHT-maujccbkcgdt3J5XZSmH6b_JyIe 2x,
+  https://drive.google.com/uc?id=1LQHT-maujccbkcgdt3J5XZSmH6b_JyIe 2x
 " alt="missing image">
 
 That's it!

@@ -2,6 +2,7 @@
 layout: post
 title:  "Ruby on Rails Best Practices"
 date:   2020-06-10 16:53:00 +0300
+img: https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa
 categories: theories
 technology: Ruby/Rails
 tutorial_type: How To

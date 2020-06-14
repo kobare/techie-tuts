@@ -2,7 +2,7 @@
 layout: post
 title:  "Git Cheatsheet"
 date:   2020-06-09 17:07:06 +0300
-img: ionic_side_menu.png
+img: https://drive.google.com/uc?id=1JXnK4HNIJivvw_BuzpMZXKprxALKKNx3
 categories: cheat
 technology: Github/Git
 tutorial_type: Cheat

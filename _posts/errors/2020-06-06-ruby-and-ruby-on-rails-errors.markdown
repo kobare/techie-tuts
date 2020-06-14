@@ -2,7 +2,7 @@
 layout: post
 title:  "Ruby & Ruby on Rails Errors"
 date:   2020-06-09 15:51:06 +0300
-img: ionic_side_menu.png
+img: https://drive.google.com/uc?id=1oFSYHqhPRaK1E4NhgzDG42PtFeXP3-Sl
 categories: errors
 technology: Ruby/Rails
 tutorial_type: How To
