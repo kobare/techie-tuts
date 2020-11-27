@@ -1,20 +1,17 @@
 ---
 layout: post
 title:  "rbenv Cheat Sheet"
+author: Denis Kobare
 date:   2020-06-06 14:17:06 +0300
 img: https://drive.google.com/uc?id=1iW42TfZZQnPVwxPhMBnoH_IgiPCnodFv
-categories: cheatsheets
-technology: Ruby/rbenv
-tutorial_type: Cheat
+categories: programming
+sub_category: ruby
+type: tutorials
+technology: Ruby
+permalink: "category/:categories/ruby/rbenv/cheatsheet/:year:month/:title"
+
 ---
 
-<div align="center" style="background-color:#B22222"> 
-<img srcset="
-  https://drive.google.com/uc?id=1iW42TfZZQnPVwxPhMBnoH_IgiPCnodFv 1x,
-  https://drive.google.com/uc?id=1iW42TfZZQnPVwxPhMBnoH_IgiPCnodFv 3.5x
-" alt="missing image">
-</div>
-<br>
 
 
 <div class="window">

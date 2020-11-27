@@ -1,20 +1,17 @@
 ---
 layout: post
 title:  "Install Ruby On Rails on Ubuntu 18.10 Cosmic Canimal"
+author: Denis Kobare
 date:   2020-06-06 14:17:06 +0300
 img: https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa
-categories: installations
+categories: frameworks
+sub_category: ruby-on-rails
+type: tutorials
 technology: Ruby/Rails
 tutorial_type: How To
+permalink: "category/:categories/ruby-on-rails/installations/:year:month/:title"
 ---
 
-<div align="center" style="background-color:#B22222"> 
-<img srcset="
-  https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa 3x,
-  https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa 6x
-" alt="missing image">
-</div>
-<br>
 
 In this tutorial we are going to set up Ruby and Ruby on Rails development environment on Ubuntu 18.10 Cosmic Canimal.
 

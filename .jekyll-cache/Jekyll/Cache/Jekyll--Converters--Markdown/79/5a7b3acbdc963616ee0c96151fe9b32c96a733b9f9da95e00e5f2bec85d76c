@@ -1,0 +1,9 @@
+I"ó<div class="window">
+  <div class="terminal">
+    <h4># list all available versions</h4>
+    <p class="command">rbenv install -l</p>
+  
+    <h4># install a specific Ruby version</h4>
+    <p class="command">rbenv install 2.7.1</p>
+</div></div>
+:ET

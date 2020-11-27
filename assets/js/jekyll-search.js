@@ -237,7 +237,7 @@
         searchInput: null,
         resultsContainer: null,
         json: [],
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+        searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
         templateMiddleware: function () {},
         noResultsText: 'No results found',
         limit: 10,

@@ -1,20 +1,17 @@
 ---
 layout: post
 title:  "Git Cheatsheet"
+author: Denis Kobare
 date:   2020-06-09 17:07:06 +0300
 img: https://drive.google.com/uc?id=1JXnK4HNIJivvw_BuzpMZXKprxALKKNx3
-categories: cheat
+categories: versioning
+sub_category: github
+type: tutorials
 technology: Github/Git
-tutorial_type: Cheat
+permalink: "category/:categories/github/cheatsheet/:year:month/:title"
+
 ---
 
-<div align="center" style="background-color:#B22222"> 
-<img srcset="
-  https://drive.google.com/uc?id=1JXnK4HNIJivvw_BuzpMZXKprxALKKNx3 3x,
-  https://drive.google.com/uc?id=1JXnK4HNIJivvw_BuzpMZXKprxALKKNx3 6x
-" alt="missing image">
-</div>
-<br>
 
 Git is used as a version control system. If you don't already have a Github account, [register](https://github.com/){:target="_blank"} one.
 

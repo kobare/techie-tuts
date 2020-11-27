@@ -1,0 +1,57 @@
+I"y<h4 id="1-space-indentations">1. Space Indentations</h4>
+
+<p>One of the easiest and most widely agreed-upon Ruby on Rails best practices is to use two space indentations instead of four space indentations. Additionally, most Ruby on Rails developers agree on never using tabs, which includes not mixing tabs and spaces. This will keep long strings of code easier to read and maintain.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">some_method</span>
+  <span class="n">some_var</span> <span class="o">=</span> <span class="kp">true</span>
+  <span class="k">if</span> <span class="n">some_var</span>
+    <span class="n">do_something</span>
+  <span class="k">else</span>
+    <span class="n">do_something_else</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+
+<p><br /></p>
+<h4 id="2-iteration-use-each-instead-of-for">2. Iteration: Use each Instead of for</h4>
+
+<p>Use each instead of a for when iterating through a collection. It is simply more readable.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="c1">#for loop</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">100</span>
+    <span class="o">...</span>
+  <span class="k">end</span>
+
+  <span class="c1"># each</span>
+  <span class="p">(</span><span class="mi">1</span><span class="o">..</span><span class="mi">100</span><span class="p">).</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+    <span class="o">...</span>
+  <span class="k">end</span></code></pre></figure>
+
+<p><br /></p>
+<h4 id="3-conditionals-use-unless-instead-of-if">3. Conditionals: Use unless Instead of !if:</h4>
+
+<p>Avoid using an if statement with a negative condition unless you need to involve an else to your conditional.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="c1"># don't do this</span>
+  <span class="k">if</span> <span class="o">!</span><span class="kp">true</span>
+    <span class="n">do_this</span>
+  <span class="k">end</span>
+
+  <span class="c1"># or</span>
+  <span class="k">if</span> <span class="nb">name</span> <span class="o">!=</span> <span class="s2">"pluto"</span>
+    <span class="n">do_that</span>
+  <span class="k">end</span>
+
+  <span class="c1"># use Ruby’s exclusive unless</span>
+  <span class="k">unless</span> <span class="kp">true</span>
+    <span class="n">do_this</span>
+  <span class="k">end</span>
+  
+  <span class="k">unless</span> <span class="nb">name</span> <span class="o">==</span> <span class="s2">"pluto"</span>
+    <span class="n">do_that</span>
+  <span class="k">end</span></code></pre></figure>
+
+<p>That’s it!</p>
+
+<p><em>See you in the next tuts</em></p>
+
+:ET

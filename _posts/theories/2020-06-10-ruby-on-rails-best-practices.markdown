@@ -1,20 +1,15 @@
 ---
 layout: post
 title:  "Ruby on Rails Best Practices"
+author: Denis Kobare
 date:   2020-06-10 16:53:00 +0300
 img: https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa
-categories: theories
+categories: frameworks
+sub_category: ruby-on-rails
+type: theories
 technology: Ruby/Rails
-tutorial_type: How To
+permalink: "category/:categories/ruby-on-rails/theories/:year:month/:title"
 ---
-
-<div align="center" style="background-color:#B22222"> 
-<img srcset="
-  https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa 3x,
-  https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa 6x
-" alt="missing image">
-</div>
-<br>
 
 
 #### 1. Space Indentations

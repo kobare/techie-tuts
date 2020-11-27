@@ -1,20 +1,15 @@
 ---
 layout: post
 title:  "Ruby & Ruby on Rails Errors"
+author: Denis Kobare
 date:   2020-06-09 15:51:06 +0300
 img: https://drive.google.com/uc?id=1oFSYHqhPRaK1E4NhgzDG42PtFeXP3-Sl
-categories: errors
+categories: frameworks
+sub_category: ruby-on-rails
+type: tutorials
 technology: Ruby/Rails
-tutorial_type: How To
+permalink: "category/:categories/ruby-on-rails/exceptions/:year:month/:title"
 ---
-
-<div align="center" style="background-color:#000"> 
-<img srcset="
-  https://drive.google.com/uc?id=1oFSYHqhPRaK1E4NhgzDG42PtFeXP3-Sl 3x,
-  https://drive.google.com/uc?id=1oFSYHqhPRaK1E4NhgzDG42PtFeXP3-Sl 6x
-" alt="missing image">
-</div>
-<br>
 
 
 <h4 align="center" >ERROR TYPE: <h5 align="center" >Dependency Error</h5></h4>

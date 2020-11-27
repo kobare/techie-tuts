@@ -1,262 +1,292 @@
-/*
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-(function($) {
 
-	var	$window = $(window),
-		$head = $('head'),
-		$body = $('body');
-
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '981px',   '1280px' ],
-			medium:   [ '737px',   '980px'  ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ '361px',   '480px'  ],
-			xxsmall:  [ null,      '360px'  ],
-			'xlarge-to-max':    '(min-width: 1681px)',
-			'small-to-xlarge':  '(min-width: 481px) and (max-width: 1680px)'
-		});
-
-	// Stops animations/transitions until the page has ...
-
-		// ... loaded.
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-preload');
-				}, 100);
-			});
-
-		// ... stopped resizing.
-			var resizeTimeout;
-
-			$window.on('resize', function() {
-
-				// Mark as resizing.
-					$body.addClass('is-resizing');
-
-				// Unmark after delay.
-					clearTimeout(resizeTimeout);
-
-					resizeTimeout = setTimeout(function() {
-						$body.removeClass('is-resizing');
-					}, 100);
-
-			});
-
-	// Fixes.
-
-		// Object fit images.
-			if (!browser.canUse('object-fit')
-			||	browser.name == 'safari')
-				$('.image.object').each(function() {
-
-					var $this = $(this),
-						$img = $this.children('img');
-
-					// Hide original image.
-						$img.css('opacity', '0');
-
-					// Set background.
-						$this
-							.css('background-image', 'url("' + $img.attr('src') + '")')
-							.css('background-size', $img.css('object-fit') ? $img.css('object-fit') : 'cover')
-							.css('background-position', $img.css('object-position') ? $img.css('object-position') : 'center');
-
-				});
-
-	// Sidebar.
-		var $sidebar = $('#sidebar'),
-			$sidebar_inner = $sidebar.children('.inner');
-
-		// Inactive by default on <= large.
-			breakpoints.on('<=large', function() {
-				$sidebar.addClass('inactive');
-			});
-
-			breakpoints.on('>large', function() {
-				$sidebar.removeClass('inactive');
-			});
-
-		// Hack: Workaround for Chrome/Android scrollbar position bug.
-			if (browser.os == 'android'
-			&&	browser.name == 'chrome')
-				$('<style>#sidebar .inner::-webkit-scrollbar { display: none; }</style>')
-					.appendTo($head);
-
-		// Toggle.
-			$('<a href="#sidebar" class="toggle">Toggle</a>')
-				.appendTo($sidebar)
-				.on('click', function(event) {
-
-					// Prevent default.
-						event.preventDefault();
-						event.stopPropagation();
-
-					// Toggle.
-						$sidebar.toggleClass('inactive');
-
-				});
-
-		// Events.
-
-			// Link clicks.
-				$sidebar.on('click', 'a', function(event) {
-
-					// >large? Bail.
-						if (breakpoints.active('>large'))
-							return;
-
-					// Vars.
-						var $a = $(this),
-							href = $a.attr('href'),
-							target = $a.attr('target');
-
-					// Prevent default.
-						event.preventDefault();
-						event.stopPropagation();
-
-					// Check URL.
-						if (!href || href == '#' || href == '')
-							return;
-
-					// Hide sidebar.
-						$sidebar.addClass('inactive');
-
-					// Redirect to href.
-						setTimeout(function() {
-
-							if (target == '_blank')
-								window.open(href);
-							else
-								window.location.href = href;
-
-						}, 500);
-
-				});
-
-			// Prevent certain events inside the panel from bubbling.
-				$sidebar.on('click touchend touchstart touchmove', function(event) {
-
-					// >large? Bail.
-						if (breakpoints.active('>large'))
-							return;
-
-					// Prevent propagation.
-						event.stopPropagation();
-
-				});
-
-			// Hide panel on body click/tap.
-				$body.on('click touchend', function(event) {
-
-					// >large? Bail.
-						if (breakpoints.active('>large'))
-							return;
-
-					// Deactivate.
-						$sidebar.addClass('inactive');
-
-				});
-
-		// Scroll lock.
-		// Note: If you do anything to change the height of the sidebar's content, be sure to
-		// trigger 'resize.sidebar-lock' on $window so stuff doesn't get out of sync.
-
-			$window.on('load.sidebar-lock', function() {
-
-				var sh, wh, st;
-
-				// Reset scroll position to 0 if it's 1.
-					if ($window.scrollTop() == 1)
-						$window.scrollTop(0);
-
-				$window
-					.on('scroll.sidebar-lock', function() {
-
-						var x, y;
-
-						// <=large? Bail.
-							if (breakpoints.active('<=large')) {
-
-								$sidebar_inner
-									.data('locked', 0)
-									.css('position', '')
-									.css('top', '');
-
-								return;
-
-							}
-
-						// Calculate positions.
-							x = Math.max(sh - wh, 0);
-							y = Math.max(0, $window.scrollTop() - x);
-
-						// Lock/unlock.
-							if ($sidebar_inner.data('locked') == 1) {
-
-								if (y <= 0)
-									$sidebar_inner
-										.data('locked', 0)
-										.css('position', '')
-										.css('top', '');
-								else
-									$sidebar_inner
-										.css('top', -1 * x);
-
-							}
-							else {
-
-								if (y > 0)
-									$sidebar_inner
-										.data('locked', 1)
-										.css('position', 'fixed')
-										.css('top', -1 * x);
-
-							}
-
-					})
-					.on('resize.sidebar-lock', function() {
-
-						// Calculate heights.
-							wh = $window.height();
-							sh = $sidebar_inner.outerHeight() + 30;
-
-						// Trigger scroll.
-							$window.trigger('scroll.sidebar-lock');
-
-					})
-					.trigger('resize.sidebar-lock');
-
-				});
-
-	// Menu.
-		var $menu = $('#menu'),
-			$menu_openers = $menu.children('ul').find('.opener');
-
-		// Openers.
-			$menu_openers.each(function() {
-
-				var $this = $(this);
-
-				$this.on('click', function(event) {
-
-					// Prevent default.
-						event.preventDefault();
-
-					// Toggle.
-						$menu_openers.not($this).removeClass('active');
-						$this.toggleClass('active');
-
-					// Trigger resize (sidebar lock).
-						$window.triggerHandler('resize.sidebar-lock');
-
-				});
-
-			});
+(function ($) {
+    "use strict";
+
+    /*==================================================================
+    [ Load page ]*/
+    try {
+        $(".animsition").animsition({
+            inClass: 'fade-in',
+            outClass: 'fade-out',
+            inDuration: 1500,
+            outDuration: 800,
+            linkElement: '.animsition-link',
+            loading: true,
+            loadingParentElement: 'html',
+            loadingClass: 'animsition-loading-1',
+            loadingInner: '<div class="loader05"></div>',
+            timeout: false,
+            timeoutCountdown: 5000,
+            onLoadEvent: true,
+            browser: [ 'animation-duration', '-webkit-animation-duration'],
+            overlay : false,
+            overlayClass : 'animsition-overlay-slide',
+            overlayParentElement : 'html',
+            transition: function(url){ window.location.href = url; }
+        });
+    } catch(er) {console.log(er);}
+
+    
+    /*==================================================================
+    [ Back to top ]*/
+    try {
+        var windowH = $(window).height()/2;
+
+        $(window).on('scroll',function(){
+            if ($(this).scrollTop() > windowH) {
+                $("#myBtn").addClass('show-btn-back-to-top');
+            } else {
+                $("#myBtn").removeClass('show-btn-back-to-top');
+            }
+        });
+
+        $('#myBtn').on("click", function(){
+            $('html, body').animate({scrollTop: 0}, 300);
+        });
+    } catch(er) {console.log(er);}
+
+
+    /*==================================================================
+    [ Fixed menu ]*/
+    try {
+        var posNav = $('.wrap-main-nav').offset().top;
+        var menuDesktop = $('.container-menu-desktop');
+        var mainNav = $('.main-nav');
+        var lastScrollTop = 0;
+        var st = 0;
+        
+        $(window).on('scroll',function(){
+            fixedHeader();     
+        });
+        
+        $(window).on('resize',function(){ 
+            fixedHeader();
+        });
+
+        $(window).on('load',function(){ 
+            fixedHeader();
+        });
+
+        var fixedHeader = function() {
+            st = $(window).scrollTop();
+
+            if(st > posNav + mainNav.outerHeight()) {
+                $(menuDesktop).addClass('fix-menu-desktop');
+            } 
+            else if(st <= posNav) {
+                $(menuDesktop).removeClass('fix-menu-desktop');
+            }   
+
+            if (st > lastScrollTop){
+                $(mainNav).removeClass('show-main-nav');
+            } 
+            else {
+                $(mainNav).addClass('show-main-nav');
+            }
+
+            lastScrollTop = st;
+        };
+            
+    } catch(er) {console.log(er);}
+
+    /*==================================================================
+    [ Menu mobile ]*/
+    try {
+        $('.btn-show-menu-mobile').on('click', function(){
+            $(this).toggleClass('is-active');
+            $('.menu-mobile').slideToggle();
+        });
+
+        var arrowMainMenu = $('.arrow-main-menu-m');
+
+        for(var i=0; i<arrowMainMenu.length; i++){
+            $(arrowMainMenu[i]).on('click', function(){
+                $(this).parent().find('.sub-menu-m').slideToggle();
+                $(this).toggleClass('turn-arrow-main-menu-m');
+            })
+        }
+
+        $(window).on('resize',function(){
+            if($(window).width() >= 992){
+                if($('.menu-mobile').css('display') === 'block') {
+                    $('.menu-mobile').css('display','none');
+                    $('.btn-show-menu-mobile').toggleClass('is-active');
+                }
+
+                $('.sub-menu-m').each(function(){
+                    if($(this).css('display') === 'block') { 
+                        $(this).css('display','none');
+                        $(arrowMainMenu).removeClass('turn-arrow-main-menu-m');
+                    }
+                });
+                    
+            }
+        });
+    } catch(er) {console.log(er);}
+
+
+    /*==================================================================
+    [ Respon tab01 ]*/
+    try {
+        $('.tab01').each(function(){
+            var tab01 = $(this);
+            var navTabs = $(this).find('.nav-tabs');
+            var dropdownMenu = $(tab01).find('.nav-tabs>.nav-item-more .dropdown-menu');
+            var navItem = $(tab01).find('.nav-tabs>.nav-item');
+
+            var navItemSize = [];
+            var size = 0;
+            var wNavItemMore = 0;
+            
+            $(window).on('load', function(){
+                navItem.each(function(){
+                    size += $(this).width();
+                    navItemSize.push(size);
+                });
+
+                responTab01();
+            });
+                
+            $(window).on('resize', function(){
+                responTab01();              
+            })
+
+            var responTab01 = function() {
+                if(navTabs.width() <= navItemSize[navItemSize.length - 1] + 1) { 
+                    $(tab01).find('.nav-tabs>.nav-item-more').removeClass('dis-none');
+                }
+                else {
+                    $(tab01).find('.nav-tabs>.nav-item-more').addClass('dis-none');
+                }
+
+                wNavItemMore = $(tab01).find('.nav-tabs>.nav-item-more').hasClass('dis-none')? 0 : $(tab01).find('.nav-tabs>.nav-item-more').width();
+
+                for(var i=0 ; i<navItemSize.length ; i++) {
+
+                    if(navTabs.width() - wNavItemMore <= navItemSize[i] + 1) {
+                        $(tab01).find('.nav-tabs .nav-item').remove();
+
+                        for(var j=i-1 ; j >= 0 ; j--) {
+                            $(navTabs).prepend($(navItem[j]).clone());
+                        }
+
+                        for(var j=i ; j < navItemSize.length ; j++) {
+                            $(dropdownMenu).append($(navItem[j]).clone());
+                        }
+
+                        break;
+                    }
+                    else {
+                        $(tab01).find('.nav-tabs .nav-item').remove();
+
+                        for(var j=i ; j >= 0 ; j--) {
+                            $(navTabs).prepend($(navItem[j]).clone());
+                        }
+                    }
+                }
+            };
+        });
+    } catch(er) {console.log(er);}
+        
+
+    /*==================================================================
+    [ Play video 01 ]*/
+    try {
+        var srcOld = $('.video-mo-01').children('iframe').attr('src');
+
+        $('[data-target="#modal-video-01"]').on('click',function(){
+            $('.video-mo-01').children('iframe')[0].src += "&autoplay=1";
+
+            setTimeout(function(){
+                $('.video-mo-01').css('opacity','1');
+            },300);      
+        });
+        
+        $('[data-target="#modal-video-02"]').on('click',function(){
+            $('.video-mo-02').children('iframe')[0].src += "&autoplay=1";
+
+            setTimeout(function(){
+                $('.video-mo-02').css('opacity','1');
+            },300);      
+        });
+
+        $('[data-target="#modal-video-03"]').on('click',function(){
+            $('.video-mo-03').children('iframe')[0].src += "&autoplay=1";
+
+            setTimeout(function(){
+                $('.video-mo-03').css('opacity','1');
+            },300);      
+        });
+
+        $('[data-target="#modal-video-04"]').on('click',function(){
+            $('.video-mo-04').children('iframe')[0].src += "&autoplay=1";
+
+            setTimeout(function(){
+                $('.video-mo-04').css('opacity','1');
+            },300);      
+        });
+        
+
+        $('[data-dismiss="modal"]').on('click',function(){
+            $('.video-mo-01').children('iframe')[0].src = srcOld;
+            $('.video-mo-01').css('opacity','0');
+        });
+    } catch(er) {console.log(er);}
+   
+
+    /*==================================================================
+    [ Tab mega menu ]*/
+    try {
+        $(window).on('load', function(){
+            $('.sub-mega-menu .nav-pills > a').hover(function() {
+                $(this).tab('show');
+            });
+        });
+    } catch(er) {console.log(er);}
+
+    /*==================================================================
+    [ Slide100 txt ]*/
+
+    try {
+        $('.slide100-txt').each(function(){
+            var slideTxt = $(this);
+            var itemSlideTxt = $(this).find('.slide100-txt-item'); 
+            var data = [];
+            var count = 0;
+            var animIn = $(this).data('in');
+            var animOut = $(this).data('out');
+
+            for(var i=0; i<itemSlideTxt.length; i++) {
+                data[i] = $(itemSlideTxt[i]).clone();
+                $(data[i]).addClass('clone');
+            }
+
+            $(window).on('load', function(){
+                $(slideTxt).find('.slide100-txt-item').remove();
+                $(slideTxt).append($(data[0]).clone());
+                $(slideTxt).find('.slide100-txt-item.clone').addClass(animIn + ' visible-true');
+                count = 0;
+            });
+            
+            setInterval(function(){
+                $(slideTxt).find('.slide100-txt-item.ab-t-l.' + animOut).remove();
+                $(slideTxt).find('.slide100-txt-item').addClass('ab-t-l ' + animOut);
+
+                
+                if(count >= data.length-1) {
+                    count = 0;
+                }
+                else {
+                    count++;
+                }
+
+                console.log($(data[count]).text());
+
+                $(slideTxt).append($(data[count]).clone());
+                $(slideTxt).find('.slide100-txt-item.clone').addClass(animIn + ' visible-true');
+            },5000); 
+        });
+    } catch(er) {console.log(er);}
+            
 
 })(jQuery);

@@ -32,7 +32,7 @@ gulp.task('browser-sync', ['sass', 'img', 'jekyll-build'], function() {
 
 // Compile files
 gulp.task('sass', function () {
-    return gulp.src('assets/css/sass/main.scss')
+    return gulp.src('assets/css/sass/style.scss')
         .pipe(sass({
             outputStyle: 'expanded',
             onError: browserSync.notify

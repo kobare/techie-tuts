@@ -2,17 +2,26 @@
 layout: default
 ---
 
-<section>
+<style>
+.reduce-size{
+  padding: 30px;
+ /* background-color: #efefef; */
+  width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+</style>
+<section class="reduce-size bg-light">
                 <!-- Page content object inserted below -->
         {{page.content | markdownify}}
 </section>
-<hr><br>
 
+<br>
 <section>
         {% include newsletter.html %}
 </section>
-<hr><br>
 
-<section>
+
+<section class="reduce-size bg-light">
         {% include disqus.html %}
 </section>

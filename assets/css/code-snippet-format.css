@@ -59,3 +59,18 @@
 .highlight .vg { color: #003333 } /* Name.Variable.Global */
 .highlight .vi { color: #003333 } /* Name.Variable.Instance */
 .highlight .il { color: #FF6600 } /* Literal.Number.Integer.Long */
+
+
+.notepad{
+  width: 75%;
+  max-height: 500px;
+  padding: 40px;      
+  margin: auto;
+  border: solid;
+  border-radius: 0px;
+  border-width: .9px;
+  background-color: #e4e4e4;
+  text-align: left;
+  box-shadow: 0 0 5px 2.5px;
+  overflow:auto;    
+}

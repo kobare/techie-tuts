@@ -1,23 +1,15 @@
 ---
 layout: post
 title:  "What is Artificial Intelligence?"
+author: Denis Kobare
 date:   2020-05-20 14:00:06 +0300
 img: https://cdn.pixabay.com/photo/2018/10/28/01/56/evolution-3777724_960_720.jpg
 categories: blog
+sub_category: technology
+type: ai
 technology: Artificial Intelligence
-tutorial_type: Article (Tech)
+permalink: "category/:categories/technology/ai/:year:month/:title"
 ---
-
-
-
-
-
-   <div align="center" style="background-color:#fff"> 
-     <img srcset="
-  https://drive.google.com/uc?id=1w_FTmQoORi08yzHfTiJMRl0XjO_N3mCO 1x,
-  https://drive.google.com/uc?id=1w_FTmQoORi08yzHfTiJMRl0XjO_N3mCO 3x
-" alt="missing image">
-   </div> 
 
 
 Have you ever wondered how how Artificial Intelligence works? Do you use this technology in your daily life without even realizing it?
@@ -32,16 +24,15 @@ The moment you searched Google's engines and landed on this article, you contrib
 Artificial Intelligence is a type of technology that simulates intelligent human behaviour in computers.
 How can computers exhibit human-like intelligence? What is human intelligence? Well, let’s dig in:
 
- <br>
-* #### **HUMAN INTELLIGENCE**
+<br><br>
+* #### **HUMAN INTELLIGENCE**<br><br>
 
-  <div align="center" style="background-color:#000"> 
+<div class="wrap-pic-max-w p-b-30">
      <img srcset="
   https://drive.google.com/uc?id=11qlBDv2pEcKNXGudIAPRFecrTj0UzHeP 1x,
   https://drive.google.com/uc?id=11qlBDv2pEcKNXGudIAPRFecrTj0UzHeP 3.5x
 " alt="missing image">
-   </div>
-
+</div>
 
 
 Human intelligence is a mental quality that consists of the abilities to learn from experience, adapt to new situations, understand and handle abstract concepts, and use knowledge to manipulate one's environment.
@@ -50,17 +41,18 @@ When a child is born, it has no clue about how the world operates. It then begin
 
 Through repetition and a feedback system, it’s beliefs are reinforced and it gains the confidence to not be dependent anymore, but rather to be interdependent and go out into the world, learn to play the game of life.
 
- <br>
- * #### **MODELING HUMAN INTELLIGENCE IN COMPUTERS**
+<br><br>
+ * #### **MODELING HUMAN INTELLIGENCE IN COMPUTERS**<br><br>
 
-<div align="center" style="background-color:#000"> 
+<div class="wrap-pic-max-w p-b-30">
      <img srcset="
   https://drive.google.com/uc?id=1xnrq1wO3PFcQ8d0huDGP7Dtwj6gsMW-A 1x,
   https://drive.google.com/uc?id=1xnrq1wO3PFcQ8d0huDGP7Dtwj6gsMW-A 3x
 " alt="missing image">
-   </div>
- 
-<br>
+</div>
+
+
+<br><br>
 An artificially intelligent computer system uses what is called machine learning algorithm to learn.
 
 An algorithm is a computer program that contains a set of instructions that the computer is supposed to execute in the order written. 
@@ -85,15 +77,17 @@ When it was shown what shape and attributes represented a van and a motorbike, i
 
 For the model to learn and be able to apply the knowledge with high accuracy, it has to be fed a staggering amount of information. Just like you had to go through a lot of experiences in life to posses the wisdom you have today, the AI model has to consume a lot of information to become intelligent.
  
- <br>
-* #### **IS ARTIFICIAL INTELLIGENCE HERE WITH US?**
+ <br><br><br>
+ 
+* #### **IS ARTIFICIAL INTELLIGENCE HERE WITH US?**<br><br>
 
-   <div align="center" style="background-color:#000"> 
+<div class="wrap-pic-max-w p-b-30">
      <img srcset="
   https://drive.google.com/uc?id=1JxkR1_WSa3bItDkTRdrtlKy4-3l0Cj2B 1x,
   https://drive.google.com/uc?id=1JxkR1_WSa3bItDkTRdrtlKy4-3l0Cj2B 3.5x
 " alt="missing image">
-   </div> 
+</div>
+
 
  <br>
 Yes! These technologies already show up in everyday life: helping to organize photos on our smartphones or the car’s navigation system that reroutes you. These are the very basic examples. They take tasks that have historically required considerable human intellect and work through them using computer programming.
@@ -102,7 +96,7 @@ Yes! These technologies already show up in everyday life: helping to organize ph
  <br>
 #### **CONCLUSION**
 
-<div align="center" style="background-color:#000"> 
+<div class="wrap-pic-max-w p-b-30">
      <img srcset="
   https://drive.google.com/uc?id=1IDT0i-N733fQXNLL2gs0YmqYxJHjT8Su 1x,
   https://drive.google.com/uc?id=1IDT0i-N733fQXNLL2gs0YmqYxJHjT8Su 3.5x

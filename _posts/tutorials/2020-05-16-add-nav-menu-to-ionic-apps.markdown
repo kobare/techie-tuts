@@ -1,20 +1,21 @@
 ---
 layout: post
 title:  "How to Add Navigation Menu to Ionic Apps"
+author: Denis Kobare
 date:   2020-05-16 19:22:06 +0300
 img: https://drive.google.com/uc?id=1F9NWzVPs-qypOVgC3YHsXYWoH1PBduTY
-categories: ionic_apps
+categories: mobile
+sub_category: ionic
+type: tutorials
 technology: Ionic/Angular Apps
 tutorial_type: How To
+permalink: "category/:categories/ionic/tutorials/:year:month/:title"
+tags:
+- ionic
+- mobile development
+- angular
 ---
 
-<div align="justify" style="background-color:#fff"> 
-<img srcset="
-  https://drive.google.com/uc?id=1F9NWzVPs-qypOVgC3YHsXYWoH1PBduTY 1x,
-  https://drive.google.com/uc?id=1F9NWzVPs-qypOVgC3YHsXYWoH1PBduTY 4x,
-" alt="missing image">
-</div>
-<br>
 
 The Menu component is a navigation drawer that slides in from the side of the current view. By default, it slides in from the left, but the side can be overridden. <br><br>The menu will be displayed differently based on the mode, however the display type can be changed to any of the available menu types. <br><br>The menu element should be a sibling to the root content element. <br><br>There can be any number of menus attached to the content. These can be controlled from the templates, or programmatically using the MenuController. [Read more from ionic framework docs](https://ionicframework.com/docs/api/menu){:target="_blank"}
 

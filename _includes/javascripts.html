@@ -1,21 +1,26 @@
 <!-- Scripts -->
-  <script src="{{site.baseurl}}/assets/js/jquery.min.js"></script>
-  <script src="{{site.baseurl}}/assets/js/browser.min.js"></script>
-  <script src="{{site.baseurl}}/assets/js/breakpoints.min.js"></script>
-  <script src="{{site.baseurl}}/assets/js/util.js"></script>
-<script src="{{site.baseurl}}/assets/js/jekyll-search.js"></script>
+  <script src="{{site.baseurl}}/assets/js/jekyll-search.js"></script>
+     
+
+  
+  <script src="{{site.baseurl}}/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="{{site.baseurl}}/assets/vendor/animsition/js/animsition.min.js"></script>
+  <script src="{{site.baseurl}}/assets/vendor/bootstrap/js/popper.js"></script>      
+  <script src="{{site.baseurl}}/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{{site.baseurl}}/assets/js/main.js"></script>  
+
 
   <script>
     SimpleJekyllSearch({
       searchInput: document.getElementById('query'),
       resultsContainer: document.getElementById('results-container'),
       json: '{{site.baseurl}}/search.json',
-      searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+      searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
       noResultsText: 'No results found',
       fuzzy: false,
       exclude: ['Welcome']
     });
   </script>
-  <script src="{{site.baseurl}}/assets/js/main.js"></script>
 
 <!-- End of Scripts -->
+
