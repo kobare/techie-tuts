@@ -123,10 +123,10 @@ MySQL Crash Course | Learn SQL
 {% for category in site.data.content_categories %}
   {% for frameworks in category[1] %}
     {% for framework in frameworks[1] %}  
-<!-- Entertainment -->
+<!-- Sub-Category -->
 <div class="tab01 p-b-20">
 <div class="tab01-head how2 how2-cl1 bocl12 flex-s-c m-r-10 m-r-0-sr991">
-<!-- Brand tab -->
+<!-- Sub-Category tab -->
 <h3 class="f1-m-2 cl12 tab01-title">
 {{ framework.name }}
 </h3>
@@ -180,7 +180,7 @@ View all
 <div class="col-sm-6 p-r-25 p-r-15-sr991">
 {% assign count = 0 %}
   {% for post in site.posts %}
-      {% assign subcat = framework.name | downcase %}
+      {% assign subcat = framework.name | downcase | replace: "-", " "%}
       {% assign sub_cat = post.sub_category | replace: "-", " " %}
       
     {% if sub_cat == subcat %}
@@ -225,7 +225,7 @@ by {{ post.author }}
 <div class="col-sm-6 p-r-25 p-r-15-sr991">
 {% assign count = 0 %}
   {% for post in site.posts %}
-      {% assign subcat = framework.name | downcase %}
+      {% assign subcat = framework.name | downcase | replace: "-", " " %}
       {% assign sub_cat = post.sub_category | replace: "-", " " %}
       
     {% if sub_cat == subcat %}
