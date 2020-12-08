@@ -39,6 +39,9 @@ Git is used as a version control system. If you don't already have a Github acco
     <h4># Check Git status</h4>
     <p class="command">git status</p>
     
+    <h4># Force unrelated merge</h4>
+    <p class="command">git merge your_branch_name --allow-unrelated-histories</p>
+    
   </div>
 </div>
 <br>
