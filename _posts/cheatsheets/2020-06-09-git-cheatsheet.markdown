@@ -26,6 +26,16 @@ Git is used as a version control system. If you don't already have a Github acco
 
     <h4># Switching remote URL from HTTPS to SSH</h4>
     <p class="command">git remote set-url origin git@github.com:USERNAME/REPOSITORY.git</p>
+
+    <h4># Create a new branch</h4>
+    <p class="command">git checkout -b your_branch_name</p>
+    
+    <h4># List available branches</h4>
+    <p class="command">git branch</p>
+
+    <h4># Navigate to a branch</h4>
+    <p class="command">git checkout your_branch_name</p>
+    
   </div>
 </div>
 <br>
