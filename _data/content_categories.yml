@@ -1,0 +1,403 @@
+################################  PROGRAMMING  ################################
+- - programming: 
+  - programming: 
+    - name: Ruby
+      list:
+      - name: Tutorials
+        url: /category/programming/ruby/tutorials
+        img: /assets/img/tutorials_01.jpg
+
+      - name: Theories
+        url: /category/programming/ruby/theories
+        img: /assets/img/theories_01.jpg
+
+      - name: News
+        url: /category/programming/ruby/news
+        img: /assets/img/news_01.jpg
+
+      - name: Table of Content
+        url: /category/programming/ruby/table-of-content
+        img: /assets/img/content_01.jpg
+        
+      url: /category/programming/ruby/
+      img: /assets/img/ruby_03.jpg
+
+##########************************************************************##########
+    - name: JavaScript
+      list:
+      - name: Tutorials
+        url: /category/programming/javascript/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/programming/javascript/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/programming/javascript/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/programming/javascript/table-of-content
+        img: /assets/img/content_01.jpg
+
+      url: /category/programming/javascript/
+      img: /assets/img/javascript_02.jpg      
+            
+##########************************************************************##########
+    - name: HTML
+      list:
+      - name: Tutorials
+        url: /category/programming/html/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/programming/html/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/programming/html/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/programming/html/table-of-content
+        img: /assets/img/content_01.jpg 
+
+      url: /category/programming/html/
+      img: /assets/img/html_01.jpg
+        
+##########************************************************************##########
+    - name: CSS
+      list:
+      - name: Tutorials
+        url: /category/programming/css/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/programming/css/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/programming/css/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/programming/css/table-of-content
+        img: /assets/img/content_01.jpg      
+
+      url: /category/programming/css/
+      img: /assets/img/css_01.jpg
+
+##########************************************************************##########
+    - name: Python
+      list:
+      - name: Tutorials
+        url: /category/programming/python/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/programming/python/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/programming/python/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/programming/python/table-of-content
+        img: /assets/img/content_01.jpg      
+             
+      url: /category/programming/python/
+      img: /assets/img/python_01.jpg
+            
+
+
+#################################  FRAMEWORKS  #################################
+- - frameworks: 
+  - frameworks: 
+    - name: Ruby-on-Rails
+      list:
+      - name: Tutorials
+        url: /category/frameworks/ruby-on-rails/tutorials
+        img: /assets/img/tutorials_01.jpg
+
+      - name: Theories
+        url: /category/frameworks/ruby-on-rails/theories
+        img: /assets/img/theories_01.jpg
+
+      - name: News
+        url: /category/frameworks/ruby-on-rails/news
+        img: /assets/img/news_01.jpg
+
+      - name: Table of Content
+        url: /category/frameworks/ruby-on-rails/table-of-content
+        img: /assets/img/content_01.jpg
+
+      url: /category/frameworks/ruby-on-rails/
+      img: /assets/img/ruby_on_rails_01.jpg
+
+##########************************************************************##########
+    - name: Jekyll
+      list:
+      - name: Tutorials
+        url: /category/frameworks/jekyll/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/frameworks/jekyll/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/frameworks/jekyll/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/frameworks/jekyll/table-of-content
+        img: /assets/img/content_01.jpg
+
+      url: /category/frameworks/jekyll/
+      img: /assets/img/jekyll_01.jpg
+      
+##########************************************************************##########
+    - name: Angular
+      list:
+      - name: Tutorials
+        url: /category/frameworks/angular/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/frameworks/angular/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/frameworks/angular/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/frameworks/angular/table-of-content
+        img: /assets/img/content_01.jpg      
+            
+      url: /category/frameworks/angular/
+      img: /assets/img/angular_01.jpg
+        
+        
+            
+###################################  DATABASE  ###################################
+- - databases: 
+  - databases: 
+    - name: MySql
+      list:
+      - name: Tutorials
+        url: /category/databases/mysql/tutorials
+        img: /assets/img/tutorials_01.jpg
+
+      - name: Theories
+        url: /category/databases/mysql/theories
+        img: /assets/img/theories_01.jpg
+
+      - name: News
+        url: /category/databases/mysql/news
+        img: /assets/img/news_01.jpg
+
+      - name: Table of Content
+        url: /category/databases/mysql/table-of-content
+        img: /assets/img/content_01.jpg
+
+      url: /category/databases/mysql/
+      img: /assets/img/mysql_01.jpg
+
+##########************************************************************##########
+    - name: Postgres
+      list:
+      - name: Tutorials
+        url: /category/databases/postgres/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/databases/postgres/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/databases/postgres/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/databases/postgres/table-of-content
+        img: /assets/img/content_01.jpg
+        
+      url: /category/databases/postgres/
+      img: /assets/img/postgres_01.jpg            
+            
+
+#################################  VERSIONING  #################################
+- - versioning: 
+  - versioning: 
+    - name: Github
+      list:
+      - name: Tutorials
+        url: /category/versioning/github/tutorials
+        img: /assets/img/tutorials_01.jpg
+
+      - name: Theories
+        url: /category/versioning/github/theories
+        img: /assets/img/theories_01.jpg
+
+      - name: News
+        url: /category/versioning/github/news
+        img: /assets/img/news_01.jpg
+
+      - name: Table of Content
+        url: /category/versioning/github/table-of-content
+        img: /assets/img/content_01.jpg
+
+      url: /category/versioning/github/
+      img: /assets/img/github_02.jpg
+
+
+
+##############################  OPERATING SYSTEMS  #############################
+- - os: 
+  - os: 
+    - name: Ubuntu
+      list:
+      - name: Tutorials
+        url: /category/os/ubuntu/tutorials
+        img: /assets/img/tutorials_01.jpg
+
+      - name: Theories
+        url: /category/os/ubuntu/theories
+        img: /assets/img/theories_01.jpg
+
+      - name: News
+        url: /category/os/ubuntu/news
+        img: /assets/img/news_01.jpg
+
+      - name: Table of Content
+        url: /category/os/ubuntu/table-of-content
+        img: /assets/img/content_01.jpg
+
+      url: /category/os/ubuntu/
+      img: /assets/img/ubuntu_01.jpg
+
+##########************************************************************##########
+    - name: Windows
+      list:
+      - name: Tutorials
+        url: /category/os/windows/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/os/windows/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/os/windows/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/os/windows/table-of-content
+        img: /assets/img/content_01.jpg
+
+      url: /category/os/windows/
+      img: /assets/img/windows_01.jpg
+
+
+###################################  MOBILE  ###################################
+- - mobile: 
+  - mobile: 
+    - name: Ionic
+      list:
+      - name: Tutorials
+        url: /category/mobile/ionic/tutorials
+        img: /assets/img/tutorials_01.jpg
+
+      - name: Theories
+        url: /category/mobile/ionic/theories
+        img: /assets/img/theories_01.jpg
+
+      - name: News
+        url: /category/mobile/ionic/news
+        img: /assets/img/news_01.jpg
+
+      - name: Table of Content
+        url: /category/mobile/ionic/table-of-content
+        img: /assets/img/content_01.jpg
+
+      url: /category/mobile/ionic/
+      img: /assets/img/ionic_01.jpg
+
+##########************************************************************##########
+    - name: Cordova
+      list:
+      - name: Tutorials
+        url: /category/mobile/cordova/tutorials
+        img: /assets/img/tutorials_01.jpg      
+
+      - name: Theories
+        url: /category/mobile/cordova/theories
+        img: /assets/img/theories_01.jpg      
+
+      - name: News
+        url: /category/mobile/cordova/news
+        img: /assets/img/news_01.jpg      
+      
+      - name: Table of Content
+        url: /category/mobile/cordova/table-of-content
+        img: /assets/img/content_01.jpg
+        
+      url: /category/mobile/cordova/
+      img: /assets/img/cordova_02.jpg
+        
+
+
+############################  SOFTWARE ENGINEERING  ############################
+- - engineering: 
+  - engineering: 
+    - name: OOP
+      list:
+      - name: Tutorials
+        url: /category/engineering/oop/tutorials
+        img: /assets/img/tutorials_01.jpg
+
+      - name: Theories
+        url: /category/engineering/oop/theories
+        img: /assets/img/theories_01.jpg
+
+      - name: News
+        url: /category/engineering/oop/news
+        img: /assets/img/news_01.jpg
+
+      - name: Table of Content
+        url: /category/engineering/oop/table-of-content
+        img: /assets/img/content_01.jpg
+        
+      url: /category/engineering/oop/
+      img: /assets/img/oop_01.jpg
+        
+
+
+####################################  BLOG  ####################################
+- - blog: 
+  - blog: 
+    - name: Technology
+      list:
+      - name: AI
+        url: /category/blog/technology/ai
+        img: /assets/img/ai_01.jpg
+
+      - name: Android
+        url: /category/blog/technology/android
+        img: /assets/img/android_01.jpg
+
+      - name: Internet
+        url: /category/blog/technology/internet
+        img: /assets/img/internet_01.jpg
+
+      - name: Table of Content
+        url: /category/blog/technology/table-of-content
+        img: /assets/img/content_01.jpg
+        
+      url: /category/blog/technology/
+      img: /assets/img/post-35.jpg
+        
+
