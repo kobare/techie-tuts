@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.7.1
+install:
+- bundle install
+deploy:
+  provider: pages #Use TravisCI’s Github Pages provider
+  skip_cleanup: true #Preserve files created during build phase.
+  github_token: $GITHUB_TOKEN #Our personal access token.
+  local_dir: _site #Use all files found in this directory for deployment.
+  target_branch: gh-pages #Push resulting build files to this branch on Github.
+  on:
+    branch: master #Only run TravisCI for this branch.
