@@ -35,6 +35,9 @@ Git is used as a version control system. If you don't already have a Github acco
 
     <h4># Navigate to a branch</h4>
     <p class="command">git checkout your_branch_name</p>
+
+    <h4># Check Git status</h4>
+    <p class="command">git status</p>
     
   </div>
 </div>
