@@ -106,7 +106,7 @@ Open Heroku site, go to dashboard and [create](https://dashboard.heroku.com/new-
 ### 4. Update Git Remotes
 Open your rails 6 app on terminal in your local machine and follow the commands below:
 
-Update your git remotes to match the name of the app you created previously on heroku site. Replace app-name with that name.
+Update your git remotes to match the name of the app you created previously on Heroku site. Replace app-name with that name.
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
 <span class="button red"></span>
