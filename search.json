@@ -28,7 +28,7 @@
       "title"    : "Add SSH Key to a Git Repository",
       "category" : "",
       "tags"     : "",
-      "url"      : "/category/versioning/github/configurations/202006/add-ssh-key-to-git-repository",
+      "url"      : "/category/vcs/github/configurations/202006/add-ssh-key-to-git-repository",
       "date"     : "2020-06-09 17:07:06 +0300"
     } ,
   
@@ -36,7 +36,7 @@
       "title"    : "Git Cheatsheet",
       "category" : "",
       "tags"     : "",
-      "url"      : "/category/versioning/github/cheatsheet/202006/git-cheatsheet",
+      "url"      : "/category/vcs/github/cheatsheet/202006/git-cheatsheet",
       "date"     : "2020-06-09 17:07:06 +0300"
     } ,
   
@@ -60,7 +60,7 @@
       "title"    : "Configure Git on Ubuntu 18.10 Cosmic Canimal",
       "category" : "",
       "tags"     : "",
-      "url"      : "/category/versioning/github/configurations/202006/configure-git-on-ubuntu-18-10",
+      "url"      : "/category/vcs/github/configurations/202006/configure-git-on-ubuntu-18-10",
       "date"     : "2020-06-06 14:17:06 +0300"
     } ,
   
