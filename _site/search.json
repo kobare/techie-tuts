@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "How to Deploy A Rail 6 App to Heroku: Using Heroku Git",
+      "category" : "",
+      "tags"     : "heroku, deploy, rails, heroku-git",
+      "url"      : "/category/cloud/heroku/tutorials/202012/deploy-rails-6-app-to-heroku-using-heroku-git",
+      "date"     : "2020-12-14 10:45:06 +0300"
+    } ,
+  
+    {
       "title"    : "Upgrade Ubuntu",
       "category" : "",
       "tags"     : "",

@@ -349,6 +349,30 @@
       img: /assets/img/cordova_02.jpg
         
 
+############################  CLOUD SERVICES  ############################
+- - cloud: 
+  - cloud: 
+    - name: Heroku
+      list:
+      - name: Tutorials
+        url: /category/cloud/heroku/tutorials
+        img: /assets/img/tutorials_01.jpg
+
+      - name: Theories
+        url: /category/cloud/heroku/theories
+        img: /assets/img/theories_01.jpg
+
+      - name: News
+        url: /category/cloud/heroku/news
+        img: /assets/img/news_01.jpg
+
+      - name: Table of Content
+        url: /category/cloud/heroku/table-of-content
+        img: /assets/img/content_01.jpg
+        
+      url: /category/cloud/heroku/
+      img: /assets/img/heroku_01.jpg
+        
 
 ############################  SOFTWARE ENGINEERING  ############################
 - - engineering: 
