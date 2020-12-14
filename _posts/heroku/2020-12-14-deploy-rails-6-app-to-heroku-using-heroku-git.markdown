@@ -189,7 +189,7 @@ user@local_machine
 
 **Note:** In case of webpack error after deploying:
 
-Create app/javascript/stylesheets folder and add in that folder empty application.scss file
+Create app/javascript/stylesheets folder and add in that folder, create an empty application.scss file
 
 <br>Then open app/javascript/packs/application.js file and import added file to your pack js file with;
 
