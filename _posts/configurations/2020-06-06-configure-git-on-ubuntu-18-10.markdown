@@ -4,7 +4,7 @@ title:  "Configure Git on Ubuntu 18.10 Cosmic Canimal"
 author: Denis Kobare
 date:   2020-06-06 14:17:06 +0300
 img: https://drive.google.com/uc?id=1JXnK4HNIJivvw_BuzpMZXKprxALKKNx3
-categories: versioning
+categories: vcs
 sub_category: github
 type: tutorials
 technology: Github/Git

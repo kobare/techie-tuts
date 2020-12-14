@@ -4,7 +4,7 @@ title:  "Add SSH Key to a Git Repository"
 author: Denis Kobare
 date:   2020-06-09 17:07:06 +0300
 img: https://drive.google.com/uc?id=1JXnK4HNIJivvw_BuzpMZXKprxALKKNx3
-categories: versioning
+categories: vcs
 sub_category: github
 type: tutorials
 technology: Github/Git

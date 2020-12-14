@@ -229,28 +229,28 @@
       img: /assets/img/postgres_01.jpg            
             
 
-#################################  VERSIONING  #################################
-- - versioning: 
-  - versioning: 
+#################################  VERSION CONTROL SYSTEMS  #################################
+- - vcs: 
+  - vcs: 
     - name: Github
       list:
       - name: Tutorials
-        url: /category/versioning/github/tutorials
+        url: /category/vcs/github/tutorials
         img: /assets/img/tutorials_01.jpg
 
       - name: Theories
-        url: /category/versioning/github/theories
+        url: /category/vcs/github/theories
         img: /assets/img/theories_01.jpg
 
       - name: News
-        url: /category/versioning/github/news
+        url: /category/vcs/github/news
         img: /assets/img/news_01.jpg
 
       - name: Table of Content
-        url: /category/versioning/github/table-of-content
+        url: /category/vcs/github/table-of-content
         img: /assets/img/content_01.jpg
 
-      url: /category/versioning/github/
+      url: /category/vcs/github/
       img: /assets/img/github_02.jpg
 
 
