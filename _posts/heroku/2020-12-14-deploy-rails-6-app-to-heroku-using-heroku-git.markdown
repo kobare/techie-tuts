@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to Deploy A Rail 6 App to Heroku: Using Heroku Git"
+title:  "How to Deploy A Rails 6 App to Heroku: Using Heroku Git"
 author: Denis Kobare
 date:   2020-12-14 10:45:06 +0300
 img: /assets/img/heroku_01.jpg
