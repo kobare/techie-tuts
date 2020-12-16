@@ -1,13 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-14T19:42:32+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">TechieTuts</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How to Deploy A Rails 6 App to Heroku: Using Heroku Git</title><link href="http://localhost:4000/category/cloud/heroku/tutorials/202012/deploy-rails-6-app-to-heroku-using-heroku-git" rel="alternate" type="text/html" title="How to Deploy A Rails 6 App to Heroku: Using Heroku Git" /><published>2020-12-14T10:45:06+03:00</published><updated>2020-12-14T10:45:06+03:00</updated><id>http://localhost:4000/category/cloud/heroku/tutorials/202012/deploy-rails-6-app-to-heroku-using-heroku-git</id><content type="html" xml:base="http://localhost:4000/category/cloud/heroku/tutorials/202012/deploy-rails-6-app-to-heroku-using-heroku-git">&lt;p&gt;Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. The platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-16T15:10:42+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">TechieTuts</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How to Deploy A Rails 6 App to Heroku: Using Heroku Git</title><link href="http://localhost:4000/category/cloud/heroku/tutorials/202012/deploy-rails-6-app-to-heroku-using-heroku-git" rel="alternate" type="text/html" title="How to Deploy A Rails 6 App to Heroku: Using Heroku Git" /><published>2020-12-14T10:45:06+03:00</published><updated>2020-12-14T10:45:06+03:00</updated><id>http://localhost:4000/category/cloud/heroku/tutorials/202012/deploy-rails-6-app-to-heroku-using-heroku-git</id><content type="html" xml:base="http://localhost:4000/category/cloud/heroku/tutorials/202012/deploy-rails-6-app-to-heroku-using-heroku-git">&lt;p&gt;Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. The platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market.&lt;/p&gt;
 
-&lt;p&gt;This tutorial will teach you how to deploy your rails 6 app ot heroku.
-The guide assumes that you:&lt;/p&gt;
+&lt;p&gt;This tutorial will teach you how to deploy your rails 6 app to heroku.&lt;/p&gt;
+
+&lt;table class=&quot;table table-bordered&quot;&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th colspan=&quot;5&quot; style=&quot;text-align: center;&quot;&gt;The guide assumes that you:&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+       &lt;td&gt;1. are using linux ubuntu as your OS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+       &lt;td&gt;2. have installed git on your machine&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+       &lt;td&gt;3. have a Rails 6 project ready to be deployed&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+       &lt;td&gt;4. are using postgres as your app’s database&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+       &lt;td&gt;5. have opened an account with heroku &lt;/td&gt;
+      &lt;/tr&gt;
+      
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;are using linux ubuntu as your OS&lt;/li&gt;
-  &lt;li&gt;have installed git on your machine&lt;/li&gt;
-  &lt;li&gt;have a Rails 6 project ready to be deployed&lt;/li&gt;
-  &lt;li&gt;are using postgres as your app’s database&lt;/li&gt;
-  &lt;li&gt;have &lt;a href=&quot;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=2ahUKEwiAttb4ic3tAhWUsnEKHX63D6IQFjAAegQIARAD&amp;amp;url=https%3A%2F%2Fsignup.heroku.com%2F&amp;amp;usg=AOvVaw2kG63H0ONIjUijpD8T5fVY&quot; target=&quot;_blank&quot;&gt;opened an account&lt;/a&gt; with heroku&lt;/li&gt;
+  &lt;li&gt;If you don’t have a Heroku account, &lt;a href=&quot;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=2ahUKEwiAttb4ic3tAhWUsnEKHX63D6IQFjAAegQIARAD&amp;amp;url=https%3A%2F%2Fsignup.heroku.com%2F&amp;amp;usg=AOvVaw2kG63H0ONIjUijpD8T5fVY&quot; target=&quot;_blank&quot;&gt;open an account&lt;/a&gt; with heroku&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Lets begin:&lt;/p&gt;
@@ -545,34 +568,42 @@ user@local_machine
 
 &lt;p&gt;&lt;em&gt;See you in the next tuts&lt;/em&gt;&lt;/p&gt;</content><author><name>Denis Kobare</name></author><category term="frameworks" /><summary type="html">1. Space Indentations</summary></entry><entry><title type="html">Git Cheatsheet</title><link href="http://localhost:4000/category/vcs/github/cheatsheet/202006/git-cheatsheet" rel="alternate" type="text/html" title="Git Cheatsheet" /><published>2020-06-09T17:07:06+03:00</published><updated>2020-06-09T17:07:06+03:00</updated><id>http://localhost:4000/category/vcs/github/cheatsheet/202006/git-cheatsheet</id><content type="html" xml:base="http://localhost:4000/category/vcs/github/cheatsheet/202006/git-cheatsheet">&lt;p&gt;Git is used as a version control system. If you don’t already have a Github account, &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;register&lt;/a&gt; one.&lt;/p&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;h4&gt;# List SSH keys on your machine&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;ls -al ~/.ssh&lt;/p&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
 
-    &lt;h4&gt;# Switching remote URL from SSH to HTTPS&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git remote set-url origin https://github.com/USERNAME/REPOSITORY.git&lt;/p&gt;
+&lt;div class=&quot;terminal-home&quot;&gt;
 
-    &lt;h4&gt;# Switching remote URL from HTTPS to SSH&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git remote set-url origin git@github.com:USERNAME/REPOSITORY.git&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# List SSH keys on your machine&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;ls -al ~/.ssh&lt;/p&gt;
 
-    &lt;h4&gt;# Create a new branch&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git checkout -b your_branch_name&lt;/p&gt;
-    
-    &lt;h4&gt;# List available branches&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git branch&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# Switching remote URL from SSH to HTTPS&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git remote set-url origin https://github.com/USERNAME/REPOSITORY.git&lt;/p&gt;
+ 
+ &lt;h5 class=&quot;hashed&quot;&gt;# Switching remote URL from HTTPS to SSH&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git remote set-url origin git@github.com:USERNAME/REPOSITORY.git&lt;/p&gt;
 
-    &lt;h4&gt;# Navigate to a branch&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git checkout your_branch_name&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# Create a new branch&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git checkout -b your_branch_name&lt;/p&gt;
 
-    &lt;h4&gt;# Check Git status&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git status&lt;/p&gt;
-    
-    &lt;h4&gt;# Force unrelated merge&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git merge your_branch_name --allow-unrelated-histories&lt;/p&gt;
-    
-  &lt;/div&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# List available branches&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git branch&lt;/p&gt;
+ 
+ &lt;h5 class=&quot;hashed&quot;&gt;# Navigate to a branch&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git checkout your_branch_name&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Check Git status&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git status&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Force unrelated merge&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git merge your_branch_name --allow-unrelated-histories&lt;/p&gt;
+  
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s it!&lt;/p&gt;
@@ -581,25 +612,36 @@ user@local_machine
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 1: &lt;h5 align=&quot;center&quot;&gt;Generate the SSH Key&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;h4&gt;# Generate SSH key: Replace my email address in the following steps with the ones you used for your Github account.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;YOUR@EMAIL.com&quot;&lt;/p&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
 
-    &lt;h4&gt;# You will get a message similar to the one below&lt;/h4&gt;
-    &lt;p class=&quot;log&quot;&gt;&lt;span&gt;Enter file in which to save the key (/home/pc_user/.ssh/id_rsa): &lt;/span&gt;&lt;/p&gt;
+&lt;div class=&quot;terminal-home&quot;&gt;
 
-    &lt;h4&gt;#Enter the path and the file name after the prompt. Notice how the path matches the one above&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;/home/pc_user/.ssh/name_of_your_key&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# Generate SSH key: Replace my email address in the following steps with the ones you used for your Github account.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;YOUR@EMAIL.com&quot;&lt;/p&gt;
+ 
+ &lt;h5 class=&quot;hashed&quot;&gt;# You will get a message similar to the one below&lt;/h5&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;Enter file in which to save the key (/home/pc_user/.ssh/id_rsa):&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;YOUR@EMAIL.com&quot;&lt;/p&gt;
 
-    &lt;h4&gt;# You will be prompted to enter a paraphrase. You can leave it blank and press enter if you like&lt;/h4&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;Enter file in which to save the key (/home/pc_user/.ssh/id_rsa):&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;YOUR@EMAIL.com&quot;&lt;/p&gt;
 
-    &lt;h4&gt;# Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;cat ~/.ssh/name_of_your_key.pub&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;#Enter the path and the file name after the prompt. Notice how the path matches the one above&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;/home/pc_user/.ssh/name_of_your_key&lt;/p&gt;
 
-
-  &lt;/div&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# You will be prompted to enter a paraphrase. You can leave it blank and press enter if you like&lt;/h5&gt;
+ 
+ &lt;h5 class=&quot;hashed&quot;&gt;# Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;cat ~/.ssh/name_of_your_key.pub&lt;/p&gt;
+   
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 2: &lt;h5 align=&quot;center&quot;&gt;Copy the generated SSH key and add it to your Github repository&lt;/h5&gt;&lt;/h4&gt;
@@ -609,130 +651,167 @@ user@local_machine
 
 &lt;p&gt;&lt;em&gt;See you in the next tuts&lt;/em&gt;&lt;/p&gt;</content><author><name>Denis Kobare</name></author><category term="vcs" /><summary type="html">Git is used as a version control system. In this tutorial we are going to set up SSH to a repository. If you don’t already have a Github account, register one.</summary></entry><entry><title type="html">Ruby &amp;amp; Ruby on Rails Errors</title><link href="http://localhost:4000/category/frameworks/ruby-on-rails/exceptions/202006/ruby-and-ruby-on-rails-errors" rel="alternate" type="text/html" title="Ruby &amp;amp; Ruby on Rails Errors" /><published>2020-06-09T15:51:06+03:00</published><updated>2020-06-09T15:51:06+03:00</updated><id>http://localhost:4000/category/frameworks/ruby-on-rails/exceptions/202006/ruby-and-ruby-on-rails-errors</id><content type="html" xml:base="http://localhost:4000/category/frameworks/ruby-on-rails/exceptions/202006/ruby-and-ruby-on-rails-errors">&lt;h4 align=&quot;center&quot;&gt;ERROR TYPE: &lt;h5 align=&quot;center&quot;&gt;Dependency Error&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;h4&gt;# Error when trying to run a jekyll project&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;Dependency Error: Yikes! It looks like you don't have jekyll-commonmark-ghpages or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'incompatible library version - /home/koby/gems/gems/commonmarker-0.17.13/lib/commonmarker/commonmarker.so' If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/!&lt;/p&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
 
-    &lt;h4&gt;# Step 1:&lt;/h4&gt;
-    &lt;h4&gt;# Warning! This will uninstall bundler and all other gems&lt;/h4&gt;
-    &lt;h3&gt;# a removes all versions&lt;/h3&gt;
-    &lt;h3&gt;# I ignores dependencies&lt;/h3&gt;
-    &lt;h3&gt;# x includes executables&lt;/h3&gt;
+&lt;div class=&quot;terminal-home&quot;&gt;
 
-    &lt;h4&gt;For Rubygems &amp;gt;= 2.1.0&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;gem uninstall -aIx&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# Error when trying to run a jekyll project&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;Dependency Error: Yikes! It looks like you don't have jekyll-commonmark-ghpages or one of its dependencies installed. In order to use Jekyll as currently configured, you'll need to install this gem. The full error message from Ruby is: 'incompatible library version - /home/koby/gems/gems/commonmarker-0.17.13/lib/commonmarker/commonmarker.so' If you run into trouble, you can find helpful resources at https://jekyllrb.com/help/!&lt;/p&gt;
 
-    &lt;h4&gt;For Rubygems &amp;lt; 2.1.0&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;for i in `gem list --no-versions`; do gem uninstall -aIx $i; done&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# Step 1:&lt;/h5&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# Warning! This will uninstall bundler and all other gems&lt;/h5&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# a removes all versions&lt;/h5&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# I ignores dependencies&lt;/h5&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# x includes executables&lt;/h5&gt;
 
-    &lt;h4&gt;# If the above didn't work: You could also build out a new Gemfile and run bundle clean --force. This will remove all other gems that aren't included in the new Gemfile.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;bundle clean --force&lt;/p&gt;
+ 
+ &lt;h5 class=&quot;hashed&quot;&gt;For Rubygems &amp;gt;= 2.1.0:&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;gem uninstall -aIx&lt;/p&gt;
 
-    &lt;h4&gt;# Step 2:&lt;/h4&gt;
-    &lt;h4&gt;# Now install the version of bundler required by your project&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;gem install bundler:2.1.4&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;For Rubygems &amp;lt; 2.1.0:&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;for i in `gem list --no-versions`; do gem uninstall -aIx $i; done&lt;/p&gt;
 
-    &lt;h4&gt;# Step 3:&lt;/h4&gt;
-    &lt;h4&gt;#After this everything should be ok!&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;bundle install&lt;/p&gt;
-  &lt;/div&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# If the above didn't work: You could also build out a new Gemfile and run bundle clean --force. This will remove all other gems that aren't included in the new Gemfile.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;bundle clean --force&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Step 2:&lt;/h5&gt;
+ 
+ &lt;h5 class=&quot;hashed&quot;&gt;# Now install the version of bundler required by your project&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;gem install bundler:2.1.4&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Step 3:&lt;/h5&gt;
+ 
+ &lt;h5 class=&quot;hashed&quot;&gt;#After this everything should be ok!&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;bundle install&lt;/p&gt;
+   
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s it!&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;See you in the next tuts&lt;/em&gt;&lt;/p&gt;</content><author><name>Denis Kobare</name></author><category term="frameworks" /><summary type="html">ERROR TYPE: Dependency Error</summary></entry><entry><title type="html">rbenv Cheat Sheet</title><link href="http://localhost:4000/category/programming/ruby/rbenv/cheatsheet/202006/rbenv-cheatsheet" rel="alternate" type="text/html" title="rbenv Cheat Sheet" /><published>2020-06-06T14:17:06+03:00</published><updated>2020-06-06T14:17:06+03:00</updated><id>http://localhost:4000/category/programming/ruby/rbenv/cheatsheet/202006/rbenv-cheatsheet</id><content type="html" xml:base="http://localhost:4000/category/programming/ruby/rbenv/cheatsheet/202006/rbenv-cheatsheet">&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;h4&gt;# list all available versions&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv install -l&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;See you in the next tuts&lt;/em&gt;&lt;/p&gt;</content><author><name>Denis Kobare</name></author><category term="frameworks" /><summary type="html">ERROR TYPE: Dependency Error</summary></entry><entry><title type="html">rbenv Cheat Sheet</title><link href="http://localhost:4000/category/programming/ruby/rbenv/cheatsheet/202006/rbenv-cheatsheet" rel="alternate" type="text/html" title="rbenv Cheat Sheet" /><published>2020-06-06T14:17:06+03:00</published><updated>2020-06-06T14:17:06+03:00</updated><id>http://localhost:4000/category/programming/ruby/rbenv/cheatsheet/202006/rbenv-cheatsheet</id><content type="html" xml:base="http://localhost:4000/category/programming/ruby/rbenv/cheatsheet/202006/rbenv-cheatsheet">&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# list all available versions&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv install -l&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# install a specific Ruby version&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv install 2.7.1&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Install rbenv&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;brew install rbenv&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Set a local application-specific Ruby version&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv local 2.0.0&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Set a global Ruby version (default version)&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv global 2.7.1&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Completely uninstall rbenv&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;brew uninstall rbenv&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Set a shell-specific Ruby version by setting the RBENV_VERSION environment variable in your shell.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv shell 2.2.1&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# List all Ruby versions known to rbenv&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv versions&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Display the current active Ruby version (current opened project)&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv version&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Run this command after you install a new version of Ruby or install a gem that provides commands if you're using rbenv&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv rehash&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Display the full path to the executable that rbenv will invoke&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;rbenv which irb&lt;/p&gt;
   
-    &lt;h4&gt;# install a specific Ruby version&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv install 2.7.1&lt;/p&gt;
-
-    &lt;h4&gt;# Install rbenv&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;brew install rbenv&lt;/p&gt;
-
-    &lt;h4&gt;# Set a local application-specific Ruby version&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv local 2.0.0&lt;/p&gt;
-
-    &lt;h4&gt;# Set a global Ruby version (default version)&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv global 2.7.1&lt;/p&gt;
-
-    &lt;h4&gt;# Completely uninstall rbenv&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;brew uninstall rbenv&lt;/p&gt;
-
-    &lt;h4&gt;# Completely uninstall rbenv&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;brew uninstall rbenv&lt;/p&gt;
-
-    &lt;h4&gt;# Set a shell-specific Ruby version by setting the RBENV_VERSION environment variable in your shell.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv shell 2.2.1&lt;/p&gt;
-
-    &lt;h4&gt;# List all Ruby versions known to rbenv&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv versions&lt;/p&gt;
-
-    &lt;h4&gt;# Display the current active Ruby version (current project opened)&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv version&lt;/p&gt;
-
-    &lt;h4&gt;# Run this command after you install a new version of Ruby or install a gem that provides commands if you're using rbenv&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv rehash&lt;/p&gt;
-
-    &lt;h4&gt;# Display the full path to the executable that rbenv will invoke&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rbenv which irb&lt;/p&gt;
-
-  &lt;/div&gt;
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s it!&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;See you in the next tuts&lt;/em&gt;&lt;/p&gt;</content><author><name>Denis Kobare</name></author><category term="programming" /><summary type="html"># list all available versions rbenv install -l # install a specific Ruby version rbenv install 2.7.1</summary></entry><entry><title type="html">Configure Git on Ubuntu 18.10 Cosmic Canimal</title><link href="http://localhost:4000/category/vcs/github/configurations/202006/configure-git-on-ubuntu-18-10" rel="alternate" type="text/html" title="Configure Git on Ubuntu 18.10 Cosmic Canimal" /><published>2020-06-06T14:17:06+03:00</published><updated>2020-06-06T14:17:06+03:00</updated><id>http://localhost:4000/category/vcs/github/configurations/202006/configure-git-on-ubuntu-18-10</id><content type="html" xml:base="http://localhost:4000/category/vcs/github/configurations/202006/configure-git-on-ubuntu-18-10">&lt;p&gt;Git is used as a version control system. In this tutorial we are going to set it up to match our Github account. If you don’t already have a Github account, &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;register&lt;/a&gt; one.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;See you in the next tuts&lt;/em&gt;&lt;/p&gt;</content><author><name>Denis Kobare</name></author><category term="programming" /><summary type="html">user@local_machine</summary></entry><entry><title type="html">Configure Git on Ubuntu 18.10 Cosmic Canimal</title><link href="http://localhost:4000/category/vcs/github/configurations/202006/configure-git-on-ubuntu-18-10" rel="alternate" type="text/html" title="Configure Git on Ubuntu 18.10 Cosmic Canimal" /><published>2020-06-06T14:17:06+03:00</published><updated>2020-06-06T14:17:06+03:00</updated><id>http://localhost:4000/category/vcs/github/configurations/202006/configure-git-on-ubuntu-18-10</id><content type="html" xml:base="http://localhost:4000/category/vcs/github/configurations/202006/configure-git-on-ubuntu-18-10">&lt;p&gt;Git is used as a version control system. In this tutorial we are going to set it up to match our Github account. If you don’t already have a Github account, &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot;&gt;register&lt;/a&gt; one.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ubuntu version: 18.10&lt;/code&gt;&lt;/p&gt;
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 1: &lt;h5 align=&quot;center&quot;&gt;Account Configuration&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;h4&gt;# Replace my name and email address in the following steps with the ones you used for your Github account.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git config --global color.ui true&lt;/p&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
 
-    &lt;p class=&quot;command&quot;&gt;git config --global user.name &quot;YOUR NAME&quot;&lt;/p&gt;
+&lt;div class=&quot;terminal-home&quot;&gt;
 
-    &lt;p class=&quot;command&quot;&gt;git config --global user.email &quot;YOUR@EMAIL.com&quot;&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# Replace name and email in the following steps with the ones you used for your Github account.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git config --global color.ui true&lt;/p&gt;
 
-    &lt;h4&gt;# Generate SSH key&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;YOUR@EMAIL.com&quot;&lt;/p&gt;
-  &lt;/div&gt;
+ &lt;p class=&quot;console&quot;&gt;git config --global user.name &quot;YOUR NAME&quot;&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;git config --global user.email &quot;YOUR@EMAIL.com&quot;&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Generate SSH key&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;ssh-keygen -t rsa -b 4096 -C &quot;YOUR@EMAIL.com&quot;&lt;/p&gt;
+
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 2: &lt;h5 align=&quot;center&quot;&gt;Copy the generated SSH key and add it to your Github account&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;h4&gt;# Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;cat ~/.ssh/id_rsa.pub&lt;/p&gt;
-  &lt;/div&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;cat ~/.ssh/id_rsa.pub&lt;/p&gt;
+
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;Paste the output of the above command &lt;a href=&quot;https://github.com/settings/ssh&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;Paste the output of the above command &lt;a href=&quot;https://github.com/settings/ssh&quot; target=&quot;_blank&quot;&gt;here&lt;/a&gt; . &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 3: &lt;h5 align=&quot;center&quot;&gt;Verify it Worked&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;p class=&quot;command&quot;&gt;ssh -T git@github.com&lt;/p&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
 
-&lt;h4&gt;You should get a message like this:&lt;/h4&gt;
-&lt;p class=&quot;log&quot;&gt;
-      &lt;span&gt;
-        Hi user_name! You've successfully authenticated but GitHub does not provide shell access.
-      &lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;terminal-home&quot;&gt;
+
+ &lt;p class=&quot;console&quot;&gt;ssh -T git@github.com&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;Hi user_name! You've successfully authenticated but GitHub does not provide shell access.&lt;/h5&gt;
+ 
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s it!&lt;/p&gt;
@@ -745,81 +824,115 @@ user@local_machine
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 1: &lt;h5 align=&quot;center&quot;&gt;Install dependencies for Ruby and Rails&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;h4&gt;# Add the Node.js and Yarn repositories to our system before installing them to make sure we have everything necessary for Webpacker support in Rails.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;sudo apt install curl&lt;/p&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Add the Node.js and Yarn repositories to our system before installing them to make sure we have everything necessary for Webpacker support in Rails.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;sudo apt install curl&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list&lt;/p&gt;
  
-    &lt;p class=&quot;command&quot;&gt;curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -&lt;/p&gt;
+ &lt;p class=&quot;console&quot;&gt;sudo apt-get update&lt;/p&gt;
 
-    &lt;p class=&quot;command&quot;&gt;curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -&lt;/p&gt;
-
-    &lt;p class=&quot;command&quot;&gt;echo &quot;deb https://dl.yarnpkg.com/debian/ stable main&quot; | sudo tee /etc/apt/sources.list.d/yarn.list&lt;/p&gt;
-
-    &lt;p class=&quot;command&quot;&gt;sudo apt-get update&lt;/p&gt;
-
-    &lt;p class=&quot;command&quot;&gt;sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn&lt;/p&gt;
-  &lt;/div&gt;
+ &lt;p class=&quot;console&quot;&gt;sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev nodejs yarn&lt;/p&gt; 
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 2: &lt;h5 align=&quot;center&quot;&gt;Install Ruby: Using rbenv&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;h4&gt;#1. Install rbenv.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;cd&lt;/p&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;#1. Install rbenv.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;cd&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;git clone https://github.com/rbenv/rbenv.git ~/.rbenv&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;echo 'eval &quot;$(rbenv init -)&quot;' &amp;gt;&amp;gt; ~/.bashrc&lt;/p&gt;
  
-    &lt;p class=&quot;command&quot;&gt;git clone https://github.com/rbenv/rbenv.git ~/.rbenv&lt;/p&gt;
+ &lt;p class=&quot;console&quot;&gt;exec $SHELL&lt;/p&gt;
 
-    &lt;p class=&quot;command&quot;&gt;echo 'export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc&lt;/p&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;#2. Install ruby-build.&lt;/h5&gt;
+ &lt;p class=&quot;console&quot;&gt;git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build&lt;/p&gt;
 
-    &lt;p class=&quot;command&quot;&gt;echo 'eval &quot;$(rbenv init -)&quot;' &amp;gt;&amp;gt; ~/.bashrc&lt;/p&gt;
+ &lt;p class=&quot;console&quot;&gt;echo 'export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc&lt;/p&gt; 
+ 
+ &lt;p class=&quot;console&quot;&gt;exec $SHELL&lt;/p&gt;
+ 
+ &lt;p class=&quot;console&quot;&gt;rbenv install 2.7.1&lt;/p&gt;    
+ 
+ &lt;p class=&quot;console&quot;&gt;rbenv rehash&lt;/p&gt;    
+ 
+ &lt;p class=&quot;console&quot;&gt;rbenv global 2.7.1&lt;/p&gt;    
 
-    &lt;p class=&quot;command&quot;&gt;exec $SHELL&lt;/p&gt;
-
-    &lt;h4&gt;#2. Install ruby-build.&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build&lt;/p&gt;
-
-    &lt;p class=&quot;command&quot;&gt;echo 'export PATH=&quot;$HOME/.rbenv/plugins/ruby-build/bin:$PATH&quot;' &amp;gt;&amp;gt; ~/.bashrc&lt;/p&gt;
-
-    &lt;p class=&quot;command&quot;&gt;exec $SHELL&lt;/p&gt;
-
-    &lt;p class=&quot;command&quot;&gt;rbenv install 2.7.1&lt;/p&gt;
-
-    &lt;p class=&quot;command&quot;&gt;rbenv rehash&lt;/p&gt;
-
-    &lt;p class=&quot;command&quot;&gt;rbenv global 2.7.1&lt;/p&gt;
-
-    &lt;h4&gt;# Verify Ruby version&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;ruby -v&lt;/p&gt;
-  &lt;/div&gt;
+ &lt;h5 class=&quot;hashed&quot;&gt;# Verify Ruby version&lt;/h5&gt; 
+ &lt;p class=&quot;console&quot;&gt;ruby -v&lt;/p&gt;            
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 3: &lt;h5 align=&quot;center&quot;&gt;Install bundler&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;p class=&quot;command&quot;&gt;gem install bundler&lt;/p&gt;
- 
-    &lt;p class=&quot;command&quot;&gt;rbenv rehash&lt;/p&gt;
-  &lt;/div&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+
+ &lt;p class=&quot;console&quot;&gt;gem install bundler&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;rbenv rehash&lt;/p&gt;
+
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h4 align=&quot;center&quot;&gt;STEP 4: &lt;h5 align=&quot;center&quot;&gt;Install Ruby on Rails&lt;/h5&gt;&lt;/h4&gt;
 
-&lt;div class=&quot;window&quot;&gt;
-  &lt;div class=&quot;terminal&quot;&gt;
-    &lt;p class=&quot;command&quot;&gt;gem install rails -v 6.0.2.2&lt;/p&gt;
- 
-    &lt;p class=&quot;command&quot;&gt;rbenv rehash&lt;/p&gt;
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
 
-    &lt;h4&gt;# Verify Rails version&lt;/h4&gt;
-    &lt;p class=&quot;command&quot;&gt;rails -v&lt;/p&gt;
-  &lt;/div&gt;
+&lt;div class=&quot;terminal-home&quot;&gt;
+
+ &lt;p class=&quot;console&quot;&gt;gem install rails -v 6.0.2.2&lt;/p&gt;
+
+ &lt;p class=&quot;console&quot;&gt;rbenv rehash&lt;/p&gt;
+
+ &lt;h5 class=&quot;hashed&quot;&gt;# Verify Rails version&lt;/h5&gt; 
+ &lt;p class=&quot;console&quot;&gt;rails -v&lt;/p&gt; 
+
 &lt;/div&gt;
+&lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;That’s it!&lt;/p&gt;

@@ -3180,47 +3180,68 @@ We build information systems and websites to support your business
 
 <h4 align="center">STEP 1: <h5 align="center">Account Configuration</h5></h4>
 
-<div class="window">
-  <div class="terminal">
-    <h4># Replace my name and email address in the following steps with the ones you used for your Github account.</h4>
-    <p class="command">git config --global color.ui true</p>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
 
-    <p class="command">git config --global user.name "YOUR NAME"</p>
+<div class="terminal-home">
 
-    <p class="command">git config --global user.email "YOUR@EMAIL.com"</p>
+ <h5 class="hashed"># Replace name and email in the following steps with the ones you used for your Github account.</h5>
+ <p class="console">git config --global color.ui true</p>
 
-    <h4># Generate SSH key</h4>
-    <p class="command">ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"</p>
-  </div>
+ <p class="console">git config --global user.name "YOUR NAME"</p>
+
+ <p class="console">git config --global user.email "YOUR@EMAIL.com"</p>
+
+ <h5 class="hashed"># Generate SSH key</h5>
+ <p class="console">ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"</p>
+
 </div>
+</section>
 <p><br /></p>
 
 <h4 align="center">STEP 2: <h5 align="center">Copy the generated SSH key and add it to your Github account</h5></h4>
 
-<div class="window">
-  <div class="terminal">
-    <h4># Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.</h4>
-    <p class="command">cat ~/.ssh/id_rsa.pub</p>
-  </div>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+
+ <h5 class="hashed"># Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.</h5>
+ <p class="console">cat ~/.ssh/id_rsa.pub</p>
+
 </div>
+</section>
 <p><br /></p>
 
-<p>Paste the output of the above command <a href="https://github.com/settings/ssh" target="_blank">here</a> .</p>
+<p>Paste the output of the above command <a href="https://github.com/settings/ssh" target="_blank">here</a> . <br /><br /></p>
 
 <h4 align="center">STEP 3: <h5 align="center">Verify it Worked</h5></h4>
 
-<div class="window">
-  <div class="terminal">
-    <p class="command">ssh -T git@github.com</p>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
 
-<h4>You should get a message like this:</h4>
-<p class="log">
-      <span>
-        Hi user_name! You've successfully authenticated but GitHub does not provide shell access.
-      </span>
-    </p>
-  </div>
+<div class="terminal-home">
+
+ <p class="console">ssh -T git@github.com</p>
+ <h5 class="hashed">Hi user_name! You've successfully authenticated but GitHub does not provide shell access.</h5>
+ 
 </div>
+</section>
 <p><br /></p>
 
 <p>That’s it!</p>
