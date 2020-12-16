@@ -15,22 +15,32 @@ permalink: "category/:categories/ionic/tutorials/:year:month/:title"
 
 The Menu component is a navigation drawer that slides in from the side of the current view. By default, it slides in from the left, but the side can be overridden. <br><br>The menu will be displayed differently based on the mode, however the display type can be changed to any of the available menu types. <br><br>The menu element should be a sibling to the root content element. <br><br>There can be any number of menus attached to the content. These can be controlled from the templates, or programmatically using the MenuController. [Read more from ionic framework docs](https://ionicframework.com/docs/api/menu){:target="_blank"}
 
-In a [previous tutorial]({{site.baseurl}}/add-nav-menu-to-ionic-apps){:target="_blank"}, we created a side menu using the ionic-menu component. In this tutorial, we'll create a custom side-menu which we can easily style according to our preferences.
+In a [previous tutorial]({{site.baseurl}}/category/mobile/ionic/tutorials/202005/add-nav-menu-to-ionic-apps){:target="_blank"}, we created a side menu using the ionic-menu component. In this tutorial, we'll create a custom side-menu which we can easily style according to our preferences.
 
 
 Lets begin:
 
 
-Step 1: Create a sidemenu component
+### Step 1: Create a sidemenu component
 
-{% highlight typescript linenos %}
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
 
-	ionic g c sidemenu
+<div class="terminal-home">
 
-{% endhighlight %} 
+ <h5 class="hashed"># Navigate o the root of your project, open in terminal and create it</h5> 
+ <p class="console">ionic g c sidemenu</p> 
 
-<br>
-Step 2: In the sidemenu component we've just created, open `sidemenu.component.ts` and replace the code with the one below:
+</div>
+</section><br>
+
+
+### Step 2: In the sidemenu component we've just created, open `sidemenu.component.ts` and replace the code with the one below:
 
 {% highlight typescript linenos %}
 
@@ -105,7 +115,7 @@ export class SidemenuComponent implements OnInit {
 
 
 <br>
-Step 3: Just like in Step 2 above, open `sidemenu.component.html` and replace the code with the one below:
+### Step 3: Just like in Step 2 above, open `sidemenu.component.html` and replace the code with the one below:
 
 {% highlight typescript linenos %}
 
@@ -148,7 +158,7 @@ Step 3: Just like in Step 2 above, open `sidemenu.component.html` and replace th
 {% endhighlight %} 
 
 <br>
-Step 4: Like in Step 2 and 3, open `sidemenu.component.scss` and replace the code with the one below:
+### Step 4: Like in Step 2 and 3, open `sidemenu.component.scss` and replace the code with the one below:
 
 {% highlight scss linenos %}
 
@@ -244,7 +254,7 @@ Step 4: Like in Step 2 and 3, open `sidemenu.component.scss` and replace the cod
 {% endhighlight %}  
 
 <br>
-Step 5. Navigate to the root component of your project and open src/app. Add the code below to `app.module.ts`
+### Step 5. Navigate to the root component of your project and open src/app. Add the code below to `app.module.ts`
 
 {% highlight typescript linenos %}
 
@@ -254,7 +264,7 @@ Step 5. Navigate to the root component of your project and open src/app. Add the
 
 
 <br>
-Step 6: Add the code below to declarations in `app.module.ts`
+### Step 6: Add the code below to declarations in `app.module.ts`
 
 {% highlight typescript linenos %}
 
@@ -263,7 +273,7 @@ Step 6: Add the code below to declarations in `app.module.ts`
 {% endhighlight %}
 
 <br>
-Step 7: Replace the code in `app.component.html` with the code below
+### Step 7: Replace the code in `app.component.html` with the code below
 
 {% highlight typescript linenos %}
 

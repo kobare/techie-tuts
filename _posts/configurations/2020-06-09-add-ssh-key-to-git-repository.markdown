@@ -18,26 +18,37 @@ Git is used as a version control system. In this tutorial we are going to set up
 
 <h4 align="center" >STEP 1: <h5 align="center" >Generate the SSH Key</h5></h4>
 
-<div class="window">
-  <div class="terminal">
-    <h4># Generate SSH key: Replace my email address in the following steps with the ones you used for your Github account.</h4>
-    <p class="command">ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"</p>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
 
-    <h4># You will get a message similar to the one below</h4>
-    <p class="log"><span>Enter file in which to save the key (/home/pc_user/.ssh/id_rsa): </span></p>
+<div class="terminal-home">
 
-    <h4>#Enter the path and the file name after the prompt. Notice how the path matches the one above</h4>
-    <p class="command">/home/pc_user/.ssh/name_of_your_key</p>
+ <h5 class="hashed"># Generate SSH key: Replace my email address in the following steps with the ones you used for your Github account.</h5>
+ <p class="console">ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"</p>
+ 
+ <h5 class="hashed"># You will get a message similar to the one below</h5>
+ <h5 class="hashed">Enter file in which to save the key (/home/pc_user/.ssh/id_rsa):</h5>
+ <p class="console">ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"</p>
 
-    <h4># You will be prompted to enter a paraphrase. You can leave it blank and press enter if you like</h4>
+ <h5 class="hashed">Enter file in which to save the key (/home/pc_user/.ssh/id_rsa):</h5>
+ <p class="console">ssh-keygen -t rsa -b 4096 -C "YOUR@EMAIL.com"</p>
 
-    <h4># Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.</h4>
-    <p class="command">cat ~/.ssh/name_of_your_key.pub</p>
+ <h5 class="hashed">#Enter the path and the file name after the prompt. Notice how the path matches the one above</h5>
+ <p class="console">/home/pc_user/.ssh/name_of_your_key</p>
 
-
-  </div>
+ <h5 class="hashed"># You will be prompted to enter a paraphrase. You can leave it blank and press enter if you like</h5>
+ 
+ <h5 class="hashed"># Copy SSH key. This command outputs your SSH key on the terminal. Highlight everything and copy.</h5>
+ <p class="console">cat ~/.ssh/name_of_your_key.pub</p>
+   
 </div>
-<br>
+</section><br>
+
 
 <h4 align="center" >STEP 2: <h5 align="center" >Copy the generated SSH key and add it to your Github repository</h5></h4>
  You do that by opening your repository, go to the `settings` menu of that repository. Then click `deploy keys`, click `add` and paste the key.

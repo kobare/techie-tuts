@@ -21,13 +21,36 @@ tags:
 Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern apps. The platform is elegant, flexible, and easy to use, offering developers the simplest path to getting their apps to market.
 
 
-This tutorial will teach you how to deploy your rails 6 app ot heroku.
-The guide assumes that you:
- * are using linux ubuntu as your OS
- * have installed git on your machine
- * have a Rails 6 project ready to be deployed
- * are using postgres as your app's database
- * have [opened an account](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiAttb4ic3tAhWUsnEKHX63D6IQFjAAegQIARAD&url=https%3A%2F%2Fsignup.heroku.com%2F&usg=AOvVaw2kG63H0ONIjUijpD8T5fVY){:target="_blank"} with heroku 
+This tutorial will teach you how to deploy your rails 6 app to heroku.
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="5" style="text-align: center;">The guide assumes that you:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>1. are using linux ubuntu as your OS</td>
+      </tr>
+      <tr>
+       <td>2. have installed git on your machine</td>
+      </tr>
+      <tr>
+       <td>3. have a Rails 6 project ready to be deployed</td>
+      </tr>
+      <tr>
+       <td>4. are using postgres as your app’s database</td>
+      </tr>
+      <tr>
+       <td>5. have opened an account with heroku </td>
+      </tr>
+      
+    </tbody>
+  </table><br>
+
+
+ * If you don't have a Heroku account, [open an account](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiAttb4ic3tAhWUsnEKHX63D6IQFjAAegQIARAD&url=https%3A%2F%2Fsignup.heroku.com%2F&usg=AOvVaw2kG63H0ONIjUijpD8T5fVY){:target="_blank"} with heroku 
 
 
 

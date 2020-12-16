@@ -24,7 +24,7 @@ Ionic contains a component called ion-menu that enables us to easily create a si
 
 Lets begin: 
 
-1). Navigate to the root component of your project, which is the `app.component.ts`
+### 1). Navigate to the root component of your project, which is the `app.component.ts`
 
 Then, create the `sideMenu()` method in AppComponent class and inside that method add an array of objects that contain the different pages you want to navigate to in your project.
 
@@ -97,7 +97,8 @@ export class AppComponent {
 
 **Note:** To obtain the url, you can navigate to the `app-routing.module.ts` and check the path of each page inside the Routes array. Ion icons name values are available on [ionicons site](https://ionicons.com/){:target="_blank"}.
 
-2). Add the ion-menu component in the `app.component.html` file to create a side menu.
+<br>
+### 2). Add the ion-menu component in the `app.component.html` file to create a side menu.
 
 {% highlight typescript linenos %}
 
@@ -132,9 +133,9 @@ Then, we use ngFor to loop inside the array navigate and we use the attribute ur
 
 **NB:** `ion-menu-toggle` is used to open and close the side menu, therefore when you click on a menu item, it will close the side menu automatically.
 
-<h4>Menu Button</h4>
 
-3). Add the open/close humburger button on your main page and/or on all pages you want. To be able to do that you need to use the component `ion-menu-button` in the html of each page, that will create the button to open a menu on the page.
+<br>
+### 3). Add the open/close humburger button on your main page and/or on all pages you want. To be able to do that you need to use the component `ion-menu-button` in the html of each page, that will create the button to open a menu on the page.
 
 For this tut, we'll add it in the `home.page.html` file:
 

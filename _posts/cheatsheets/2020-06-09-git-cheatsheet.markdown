@@ -15,36 +15,42 @@ permalink: "category/:categories/github/cheatsheet/:year:month/:title"
 
 Git is used as a version control system. If you don't already have a Github account, [register](https://github.com/){:target="_blank"} one.
 
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
 
-<div class="window">
-  <div class="terminal">
-    <h4># List SSH keys on your machine</h4>
-    <p class="command">ls -al ~/.ssh</p>
+<div class="terminal-home">
 
-    <h4># Switching remote URL from SSH to HTTPS</h4>
-    <p class="command">git remote set-url origin https://github.com/USERNAME/REPOSITORY.git</p>
+ <h5 class="hashed"># List SSH keys on your machine</h5>
+ <p class="console">ls -al ~/.ssh</p>
 
-    <h4># Switching remote URL from HTTPS to SSH</h4>
-    <p class="command">git remote set-url origin git@github.com:USERNAME/REPOSITORY.git</p>
+ <h5 class="hashed"># Switching remote URL from SSH to HTTPS</h5>
+ <p class="console">git remote set-url origin https://github.com/USERNAME/REPOSITORY.git</p>
+ 
+ <h5 class="hashed"># Switching remote URL from HTTPS to SSH</h5>
+ <p class="console">git remote set-url origin git@github.com:USERNAME/REPOSITORY.git</p>
 
-    <h4># Create a new branch</h4>
-    <p class="command">git checkout -b your_branch_name</p>
-    
-    <h4># List available branches</h4>
-    <p class="command">git branch</p>
+ <h5 class="hashed"># Create a new branch</h5>
+ <p class="console">git checkout -b your_branch_name</p>
 
-    <h4># Navigate to a branch</h4>
-    <p class="command">git checkout your_branch_name</p>
+ <h5 class="hashed"># List available branches</h5>
+ <p class="console">git branch</p>
+ 
+ <h5 class="hashed"># Navigate to a branch</h5>
+ <p class="console">git checkout your_branch_name</p>
 
-    <h4># Check Git status</h4>
-    <p class="command">git status</p>
-    
-    <h4># Force unrelated merge</h4>
-    <p class="command">git merge your_branch_name --allow-unrelated-histories</p>
-    
-  </div>
+ <h5 class="hashed"># Check Git status</h5>
+ <p class="console">git status</p>
+
+ <h5 class="hashed"># Force unrelated merge</h5>
+ <p class="console">git merge your_branch_name --allow-unrelated-histories</p>
+  
 </div>
-<br>
+</section><br>
 
 
 That's it!
