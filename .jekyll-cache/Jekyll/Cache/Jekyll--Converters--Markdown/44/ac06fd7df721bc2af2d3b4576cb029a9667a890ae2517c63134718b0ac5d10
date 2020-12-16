@@ -1,22 +1,6 @@
----
-layout: post
-title:  "Add SSH Key to a Git Repository"
-author: Denis Kobare
-date:   2020-06-09 17:07:06 +0300
-img: https://drive.google.com/uc?id=1JXnK4HNIJivvw_BuzpMZXKprxALKKNx3
-categories: vcs
-sub_category: github
-type: tutorials
-technology: Github/Git
-permalink: "category/:categories/github/configurations/:year:month/:title"
----
+I"><p>Git is used as a version control system. In this tutorial we are going to set up SSH to a repository. If you don’t already have a Github account, <a href="https://github.com/" target="_blank">register</a> one.</p>
 
-
-Git is used as a version control system. In this tutorial we are going to set up SSH to a repository. If you don't already have a Github account, [register](https://github.com/){:target="_blank"} one.
-
-
-
-<h4 align="center" >STEP 1: <h5 align="center" >Generate the SSH Key</h5></h4>
+<h4 align="center">STEP 1: <h5 align="center">Generate the SSH Key</h5></h4>
 
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
@@ -42,15 +26,14 @@ user@local_machine
  <p class="console">cat ~/.ssh/name_of_your_key.pub</p>
    
 </div>
-</section><br>
+</section>
+<p><br /></p>
 
+<h4 align="center">STEP 2: <h5 align="center">Copy the generated SSH key and add it to your Github repository</h5></h4>
+<p>You do that by opening your repository, go to the <code class="language-plaintext highlighter-rouge">settings</code> menu of that repository. Then click <code class="language-plaintext highlighter-rouge">deploy keys</code>, click <code class="language-plaintext highlighter-rouge">add</code> and paste the key.</p>
 
-<h4 align="center" >STEP 2: <h5 align="center" >Copy the generated SSH key and add it to your Github repository</h5></h4>
- You do that by opening your repository, go to the `settings` menu of that repository. Then click `deploy keys`, click `add` and paste the key.
+<p>That’s it!</p>
 
+<p><em>See you in the next tuts</em></p>
 
-That's it!
-
-*See you in the next tuts*
-
-
+:ET
