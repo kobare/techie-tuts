@@ -104,7 +104,7 @@
 
       - name: Setup-and-Configurations
         url: /category/programming/python/setup-and-configurations
-        img: /assets/img/news_01.jpg      
+        img: /assets/img/configuration_01.png      
       
       - name: Projects
         url: /category/programming/python/projects
