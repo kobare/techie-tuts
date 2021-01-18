@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04",
+      "category" : "",
+      "tags"     : "python, setup, configuration, ubuntu 20.04",
+      "url"      : "/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04",
+      "date"     : "2021-01-18 09:45:15 +0300"
+    } ,
+  
+    {
       "title"    : "How to Deploy A Rails 6 App to Heroku: Using Heroku Git",
       "category" : "",
       "tags"     : "heroku, deploy, rails, heroku-git",
