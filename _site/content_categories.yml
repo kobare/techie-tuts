@@ -1,3 +1,6 @@
+####### name key should be separated with a "-" if it contains more than one word
+####### the last directory of url key shoud match name key
+
 ################################  PROGRAMMING  ################################
 - - programming: 
   - programming: 
@@ -95,16 +98,16 @@
         url: /category/programming/python/tutorials
         img: /assets/img/tutorials_01.jpg      
 
-      - name: Theories
-        url: /category/programming/python/theories
+      - name: Fundamentals
+        url: /category/programming/python/fundamentals
         img: /assets/img/theories_01.jpg      
 
-      - name: News
-        url: /category/programming/python/news
-        img: /assets/img/news_01.jpg      
+      - name: Setup-and-Configurations
+        url: /category/programming/python/setup-and-configurations
+        img: /assets/img/configuration_01.png      
       
-      - name: Table of Content
-        url: /category/programming/python/table-of-content
+      - name: Projects
+        url: /category/programming/python/projects
         img: /assets/img/content_01.jpg      
              
       url: /category/programming/python/

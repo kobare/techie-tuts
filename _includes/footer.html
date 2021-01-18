@@ -46,12 +46,12 @@
 <div class="col-sm-6 col-lg-4 p-b-20">
 <div class="size-h-3 flex-s-c">
 <h5 class="f1-m-7 cl0">
-Popular Posts
+Latest Posts
 </h5>
 </div>
 
 <ul>
-{% for post in site.posts limit: 3 %}
+{% for post in site.posts limit: 4 %}
 <li class="flex-wr-sb-s p-b-20">
 <a href="{{ site_url }}{{post.url | prepend: site.baseurl}}" class="size-w-4 wrap-pic-w hov1 trans-03">
 <img src="{{ post.img }}" alt="IMG" height=60>
@@ -65,7 +65,7 @@ Popular Posts
 </h6>
 
 <span class="f1-s-3 cl6">
-{{ post.date | date: "%B %d" }}
+{{ post.date | date: "%B %d %Y" }}
 </span>
 </div>
 </li>
@@ -102,7 +102,7 @@ Category
 <div class="bg11">
 <div class="container size-h-4 flex-c-c p-tb-15">
 <span class="f1-s-1 cl0 txt-center">
-Copyright © 2020 TechieTuts
+Copyright &copy; 2020 - {{ site.time | date: '%Y' }} <a href="https://www.techietuts.com" style="color: #FFF;">TechieTuts</a>
 </span>
 </div>
 </div>
