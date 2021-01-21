@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-18T16:35:56+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">TechieTuts</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04</title><link href="http://localhost:4000/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04" rel="alternate" type="text/html" title="How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04" /><published>2021-01-18T09:45:15+03:00</published><updated>2021-01-18T09:45:15+03:00</updated><id>http://localhost:4000/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04</id><content type="html" xml:base="http://localhost:4000/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04">&lt;p&gt;Ubuntu 20.04 ships with Python 3 pre-installed. This guide explains how to configure and set up environments for python projects.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-21T10:53:49+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">TechieTuts</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04</title><link href="http://localhost:4000/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04" rel="alternate" type="text/html" title="How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04" /><published>2021-01-18T09:45:15+03:00</published><updated>2021-01-18T09:45:15+03:00</updated><id>http://localhost:4000/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04</id><content type="html" xml:base="http://localhost:4000/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04">&lt;p&gt;Ubuntu 20.04 ships with Python 3 pre-installed. This guide explains how to configure and set up environments for python projects.&lt;/p&gt;
 
 &lt;p&gt;To use Python 3 on the terminal, you have to explicitly use the command “python3”&lt;/p&gt;
 
@@ -43,7 +43,7 @@ user@local_machine
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;2-install-pip&quot;&gt;2. Install PIP&lt;/h3&gt;
-&lt;p&gt;PIP is a package manager for Python packages, or modules. If you have Python version 3.4 or later, skip this step because PIP is included by default.&lt;/p&gt;
+&lt;p&gt;PIP is a package manager for Python packages, or modules.&lt;/p&gt;
 &lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
 &lt;header class=&quot;terminal&quot;&gt;
 &lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
@@ -90,19 +90,14 @@ user@local_machine
 &lt;div class=&quot;terminal-home&quot;&gt;
  &lt;h6 class=&quot;hashed&quot;&gt;#Install venv&lt;/h6&gt;
  &lt;p class=&quot;console&quot;&gt;sudo apt install -y python3-venv&lt;/p&gt;
- &lt;h6 class=&quot;hashed&quot;&gt;#Create a directory called environments or any other name&lt;/h6&gt;
- &lt;p class=&quot;console&quot;&gt;mkdir environments&lt;/p&gt;
- &lt;h6 class=&quot;hashed&quot;&gt;#Navigate into the directory&lt;/h6&gt;
- &lt;p class=&quot;console&quot;&gt;cd environments&lt;/p&gt;
- &lt;h6 class=&quot;hashed&quot;&gt;#Create an environment directory. Replace &quot;my_env&quot; with the name you prefer&lt;/h6&gt;
- &lt;p class=&quot;console&quot;&gt;python3 -m venv my_env&lt;/p&gt;
-  
+ &lt;h6 class=&quot;hashed&quot;&gt;#Create a directory called python_projects or any other name. This is where you'll keep your python projects&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;mkdir python_projects&lt;/p&gt;  
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;5-activate-your-environment&quot;&gt;5. Activate Your Environment&lt;/h3&gt;
-&lt;p&gt;You need to activate the envirinment to use it&lt;/p&gt;
+&lt;h3 id=&quot;5-install-virtualenvwrapper&quot;&gt;5. Install virtualenvwrapper&lt;/h3&gt;
+&lt;p&gt;Virtualenvwrapper is a wrapper script around the main virtualenv tool. It helps to organize all of your virtual environments in one location, provides methods to help you easily create, delete, and copy environments and also provides a single command to switch between environments.&lt;/p&gt;
 &lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
 &lt;header class=&quot;terminal&quot;&gt;
 &lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
@@ -112,17 +107,17 @@ user@local_machine
 &lt;/header&gt;
 
 &lt;div class=&quot;terminal-home&quot;&gt;
- &lt;h6 class=&quot;hashed&quot;&gt;#call the activate script&lt;/h6&gt;
- &lt;p class=&quot;console&quot;&gt;source my_env/bin/activate&lt;/p&gt;
- &lt;h6 class=&quot;hashed&quot;&gt;#NB: Within the virtual environment, you can use the command python instead of python3, and pip instead of pip3&lt;/h6&gt; 
+ &lt;h6 class=&quot;hashed&quot;&gt;#Install virtualenvwrapper&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;pip3 install virtualenvwrapper&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#Get the exact location of virtualenvwrapper.sh&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;which virtualenvwrapper.sh&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;/usr/local/bin/virtualenvwrapper.sh&lt;/h6&gt;  
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;With that, the environment is ready to use!&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;6-create-a-simple-text-game-and-play&quot;&gt;6. Create a Simple Text Game and Play&lt;/h3&gt;
-
+&lt;h3 id=&quot;6-edit--the-bashrc-file-or-the-profile-file&quot;&gt;6. Edit  the ~/.bashrc file or the ~/.profile file&lt;/h3&gt;
+&lt;p&gt;Using that path, add the following four lines to your shell’s startup file. If you’re using the Bash shell, you would place these lines in either the ~/.bashrc file or the ~/.profile file.&lt;/p&gt;
 &lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
 &lt;header class=&quot;terminal&quot;&gt;
 &lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
@@ -132,15 +127,109 @@ user@local_machine
 &lt;/header&gt;
 
 &lt;div class=&quot;terminal-home&quot;&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#Open the ~/.bashrc file with gedit&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;gedit ~/.bashrc&lt;/p&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Copy the code below and add it in the bash file.
+&lt;button onclick=&quot;copyCodeToClipboard()&quot; class=&quot;btn btn-warning btn-sm float-right&quot;&gt;Copy&lt;/button&gt;&lt;/p&gt;
+&lt;div id=&quot;output&quot;&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;VIRTUALENVWRAPPER_PYTHON&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/bin/python3
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;WORKON_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.virtualenvs   &lt;span class=&quot;c&quot;&gt;# &quot;.virtualenvs&quot; can be whatever name you like&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PROJECT_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/python_projects      &lt;span class=&quot;c&quot;&gt;# &quot;python_projects&quot; can be whatever name you like&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /usr/local/bin/virtualenvwrapper.sh
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+Reload the startup file&lt;br /&gt;&lt;br /&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+ &lt;p class=&quot;console&quot;&gt;source ~/.bashrc&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#Confirm there is a directory located at $WORKON_HOME that contains all of the virtualenvwrapper data/files&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;echo $WORKON_HOME&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;/home/sys-admin/.virtualenvs&lt;/h6&gt;
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+Now, anytime you want to start a new project, you just have to do this:&lt;br /&gt;&lt;br /&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+ &lt;p class=&quot;console&quot;&gt;mkvirtualenv my-new-project&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;(my-new-project) $&lt;/h6&gt;
+&lt;/div&gt;&lt;br /&gt;
+This will create and activate a new environment in the directory located at $WORKON_HOME, where all virtualenvwrapper environments are stored.
+&lt;/section&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+You’ll also now have the shell commands available to you to help you manage the environments:
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#Create a new environment, in the WORKON_HOME.&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;mkvirtualenv ENVNAME&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#Remove an environment, in the WORKON_HOME.&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;rmvirtualenv ENVNAME &lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#To stop using an environment, you just need to deactivate it like this&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;deactivate&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#List environments&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;workon&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#Activate an environment from the list&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;workon environment_name&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/section&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;7-create-a-simple-text-game-and-play&quot;&gt;7. Create a Simple Text Game and Play&lt;/h3&gt;
+
+&lt;section class=&quot;terminal-container terminal-fixed-top&quot;&gt;
+&lt;header class=&quot;terminal&quot;&gt;
+&lt;span class=&quot;button red&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button yellow&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;button green&quot;&gt;&lt;/span&gt;
+user@local_machine
+&lt;/header&gt;
+
+
+&lt;div class=&quot;terminal-home&quot;&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#cd into the python_projects directory we created earlier&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;cd python_projects&lt;/p&gt;
+ &lt;h6 class=&quot;hashed&quot;&gt;#Create a virtual environment for our new project&lt;/h6&gt;
+ &lt;p class=&quot;console&quot;&gt;mkvirtualenv text_game&lt;/p&gt;
  &lt;h6 class=&quot;hashed&quot;&gt;#Create a file&lt;/h6&gt;
  &lt;p class=&quot;console&quot;&gt;gedit text_game.py&lt;/p&gt;
 &lt;/div&gt;
 &lt;/section&gt;
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;Copy the code below and save it in that file.
-&lt;button onclick=&quot;copyCodeToClipboard()&quot; class=&quot;btn btn-warning btn-sm float-right&quot;&gt;Copy&lt;/button&gt;&lt;/p&gt;
-&lt;div id=&quot;output&quot;&gt;&lt;/div&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2

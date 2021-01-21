@@ -66,7 +66,7 @@ user@local_machine
 
 
 ### 2. Install PIP
-PIP is a package manager for Python packages, or modules. If you have Python version 3.4 or later, skip this step because PIP is included by default.
+PIP is a package manager for Python packages, or modules.
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
 <span class="button red"></span>
@@ -114,19 +114,14 @@ user@local_machine
 <div class="terminal-home">
  <h6 class="hashed">#Install venv</h6>
  <p class="console">sudo apt install -y python3-venv</p>
- <h6 class="hashed">#Create a directory called environments or any other name</h6>
- <p class="console">mkdir environments</p>
- <h6 class="hashed">#Navigate into the directory</h6>
- <p class="console">cd environments</p>
- <h6 class="hashed">#Create an environment directory. Replace "my_env" with the name you prefer</h6>
- <p class="console">python3 -m venv my_env</p>
-  
+ <h6 class="hashed">#Create a directory called python_projects or any other name. This is where you'll keep your python projects</h6>
+ <p class="console">mkdir python_projects</p>  
 </div>
 </section><br><br><br>
 
 
-### 5. Activate Your Environment 
-You need to activate the envirinment to use it 
+### 5. Install virtualenvwrapper
+Virtualenvwrapper is a wrapper script around the main virtualenv tool. It helps to organize all of your virtual environments in one location, provides methods to help you easily create, delete, and copy environments and also provides a single command to switch between environments.
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
 <span class="button red"></span>
@@ -136,17 +131,17 @@ user@local_machine
 </header>
 
 <div class="terminal-home">
- <h6 class="hashed">#call the activate script</h6>
- <p class="console">source my_env/bin/activate</p>
- <h6 class="hashed">#NB: Within the virtual environment, you can use the command python instead of python3, and pip instead of pip3</h6> 
+ <h6 class="hashed">#Install virtualenvwrapper</h6>
+ <p class="console">pip3 install virtualenvwrapper</p>
+ <h6 class="hashed">#Get the exact location of virtualenvwrapper.sh</h6>
+ <p class="console">which virtualenvwrapper.sh</p>
+ <h6 class="hashed">/usr/local/bin/virtualenvwrapper.sh</h6>  
 </div>
 </section><br><br><br>
 
 
-With that, the environment is ready to use!<br><br>
-
-### 6. Create a Simple Text Game and Play 
-
+### 6. Edit  the ~/.bashrc file or the ~/.profile file 
+Using that path, add the following four lines to your shell’s startup file. If you’re using the Bash shell, you would place these lines in either the ~/.bashrc file or the ~/.profile file.
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
 <span class="button red"></span>
@@ -156,16 +151,107 @@ user@local_machine
 </header>
 
 <div class="terminal-home">
+ <h6 class="hashed">#Open the ~/.bashrc file with gedit</h6>
+ <p class="console">gedit ~/.bashrc</p>
+</div>
+</section><br>
+
+Copy the code below and add it in the bash file.
+<button onclick="copyCodeToClipboard()" class="btn btn-warning btn-sm float-right">Copy</button>
+<div id="output"></div>
+
+{% highlight bash linenos%}
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.virtualenvs   # ".virtualenvs" can be whatever name you like
+export PROJECT_HOME=$HOME/python_projects      # "python_projects" can be whatever name you like
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+{% endhighlight %}
+<br>
+
+<section class="terminal-container terminal-fixed-top">
+Reload the startup file<br><br>
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+ <p class="console">source ~/.bashrc</p>
+ <h6 class="hashed">#Confirm there is a directory located at $WORKON_HOME that contains all of the virtualenvwrapper data/files</h6>
+ <p class="console">echo $WORKON_HOME</p>
+ <h6 class="hashed">/home/sys-admin/.virtualenvs</h6>
+</div>
+</section><br><br>
+
+
+<section class="terminal-container terminal-fixed-top">
+Now, anytime you want to start a new project, you just have to do this:<br><br>
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+ <p class="console">mkvirtualenv my-new-project</p>
+ <h6 class="hashed">(my-new-project) $</h6>
+</div><br>
+This will create and activate a new environment in the directory located at $WORKON_HOME, where all virtualenvwrapper environments are stored.
+</section><br>
+
+
+<section class="terminal-container terminal-fixed-top">
+You’ll also now have the shell commands available to you to help you manage the environments:
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+ <h6 class="hashed">#Create a new environment, in the WORKON_HOME.</h6>
+ <p class="console">mkvirtualenv ENVNAME</p>
+ <h6 class="hashed">#Remove an environment, in the WORKON_HOME.</h6>
+ <p class="console">rmvirtualenv ENVNAME </p>
+ <h6 class="hashed">#To stop using an environment, you just need to deactivate it like this</h6>
+ <p class="console">deactivate</p>
+ <h6 class="hashed">#List environments</h6>
+ <p class="console">workon</p>
+ <h6 class="hashed">#Activate an environment from the list</h6>
+ <p class="console">workon environment_name</p>
+
+</div>
+</section><br><br><br>
+
+
+### 7. Create a Simple Text Game and Play 
+
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+
+<div class="terminal-home">
+ <h6 class="hashed">#cd into the python_projects directory we created earlier</h6>
+ <p class="console">cd python_projects</p>
+ <h6 class="hashed">#Create a virtual environment for our new project</h6>
+ <p class="console">mkvirtualenv text_game</p>
  <h6 class="hashed">#Create a file</h6>
  <p class="console">gedit text_game.py</p>
 </div>
 </section><br><br><br>
 
-
-
-Copy the code below and save it in that file.
-<button onclick="copyCodeToClipboard()" class="btn btn-warning btn-sm float-right">Copy</button>
-<div id="output"></div>
  
 {% highlight python linenos%}
 

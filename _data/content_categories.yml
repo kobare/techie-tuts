@@ -182,6 +182,28 @@
             
       url: /category/frameworks/angular/
       img: /assets/img/angular_01.jpg
+
+##########************************************************************##########
+    - name: Django
+      list:
+      - name: Installation-&-Setup
+        url: /category/frameworks/django/installation-&-setup
+        img: /assets/img/django_01.jpg      
+
+      - name: Fundamentals
+        url: /category/frameworks/django/fundamentals
+        img: /assets/img/django_02.jpg      
+
+      - name: Tutorials
+        url: /category/frameworks/django/tutorials
+        img: /assets/img/django_03.jpg      
+      
+      - name: Projects
+        url: /category/frameworks/django/projects
+        img: /assets/img/django_04.jpg      
+            
+      url: /category/frameworks/django/
+      img: /assets/img/django_logo.png
         
         
             
