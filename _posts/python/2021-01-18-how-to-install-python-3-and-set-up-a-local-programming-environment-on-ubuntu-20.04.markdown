@@ -402,7 +402,7 @@ intro()
 <br><br>
 
 
-### 7. Run the Game and Enjoy
+### 8. Run the Game and Enjoy
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
 <span class="button red"></span>
