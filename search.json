@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Build a Simple Django Blog App",
+      "category" : "",
+      "tags"     : "python, django, tutorial, crud",
+      "url"      : "/category/frameworks/django/tutorials/202101/simple-django-crud-app",
+      "date"     : "2021-01-24 16:15:00 +0300"
+    } ,
+  
+    {
       "title"    : "How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04",
       "category" : "",
       "tags"     : "python, setup, configuration, ubuntu 20.04",

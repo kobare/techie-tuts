@@ -5,7 +5,7 @@
                 <!-- Head module inserted below -->
         <head>
  <meta charset="utf-8">
- <title>theories - TechieTuts</title>
+ <title>Build a Simple Django Blog App - TechieTuts</title>
  <meta name="description" content="">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -61,17 +61,20 @@
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="theories" />
+<meta property="og:title" content="Build a Simple Django Blog App" />
+<meta name="author" content="Denis Kobare" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="http://localhost:4000/category/frameworks/ruby-on-rails/theories/" />
-<meta property="og:url" content="http://localhost:4000/category/frameworks/ruby-on-rails/theories/" />
+<meta name="description" content="This tutorial will focus on how to create a standard Django CRUD project." />
+<meta property="og:description" content="This tutorial will focus on how to create a standard Django CRUD project." />
+<link rel="canonical" href="http://localhost:4000/category/frameworks/django/tutorials/202101/simple-django-crud-app" />
+<meta property="og:url" content="http://localhost:4000/category/frameworks/django/tutorials/202101/simple-django-crud-app" />
 <meta property="og:site_name" content="TechieTuts" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-24T16:15:00+03:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="theories" />
+<meta property="twitter:title" content="Build a Simple Django Blog App" />
 <script type="application/ld+json">
-{"description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebPage","headline":"theories","url":"http://localhost:4000/category/frameworks/ruby-on-rails/theories/","@context":"https://schema.org"}</script>
+{"description":"This tutorial will focus on how to create a standard Django CRUD project.","@type":"BlogPosting","headline":"Build a Simple Django Blog App","dateModified":"2021-01-24T16:15:00+03:00","datePublished":"2021-01-24T16:15:00+03:00","author":{"@type":"Person","name":"Denis Kobare"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/category/frameworks/django/tutorials/202101/simple-django-crud-app"},"url":"http://localhost:4000/category/frameworks/django/tutorials/202101/simple-django-crud-app","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3286,290 +3289,543 @@ We build information systems and websites to support your business
 					<div class="p-r-10 p-r-0-sr991">
 						<!-- Blog Detail -->
 						<div class="p-b-70">
-						
-                                                            <!-- Page heading -->
-<div class="container p-t-4 p-b-40">
-<h2 class="f1-l-1 cl2">
+							<a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+								How To
+							</a>
+
+							<h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+								Build a Simple Django Blog App
+							</h3>
+							
+							<div class="flex-wr-s-s p-b-40">
+								<span class="f1-s-3 cl8 m-r-15">
+									<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+										by Denis Kobare
+									</a>
+
+									<span class="m-rl-3">-</span>
+
+									<span>
+										24 January 2021
+									</span>
+								</span>
+
+								<span class="f1-s-3 cl8 m-r-15">
+									<!-- 5239 Views -->
+								</span>
+
+								<a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">
+									<!-- 73 Comments -->
+								</a>
+							</div>
+
+							<div class="wrap-pic-max-w p-b-30">
+								<img src="/assets/img/django_03.jpg" alt="IMG">
+							</div>
+                                                                <style>
+.reduce-size{
+  padding: 30px;
+ /* background-color: #efefef; */
+  width: 1080px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+</style>
+<section class="reduce-size bg-light">
+                <!-- Page content object inserted below -->
+        <p>This tutorial will focus on how to create a standard Django CRUD project.</p>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th colspan="5" style="text-align: center;">This tutrial will cover the following:</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <td>1. URLs</td>
+      </tr>
+      <tr>
+       <td>2. Templates</td>
+      </tr>
+      <tr>
+       <td>3. Views</td>
+      </tr>
+      <tr>
+       <td>4. Models</td>
+      </tr>
+      <tr>
+       <td>5. Django Admin</td>
+      </tr>
       
-            Theories
-            
-</h2>
+    </tbody>
+  </table>
+<p><br /></p>
+
+<p>If you haven’t installed and configured virtual environment and the virtualenvwrapper on your machine, I have a tutorial that will show you how to. Click <a href="/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04" target="_blank">here</a> to read it.</p>
+
+<h3 id="1-create-a-virtual-environment">1. Create a Virtual Environment</h3>
+<section class="terminal-container terminal-fixed-top">
+cd into your projects directory and pass the following command to create and activate a new virtual environment named my_website
+<br /><br />
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+<p class="console">mkvirtualenv my_website</p>
 </div>
+</section>
 
-<!-- Post -->
-<section class="bg0 p-b-55">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-md-10 col-lg-12 p-b-80">
-<div class="row">
+<p><br /><br /></p>
 
+<h3 id="2-install-the-latest-version-of-django">2. Install the latest version of Django</h3>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
 
+<div class="terminal-home">
+<p class="console">pip install django</p>
+ <h6 class="hashed">Verify and check the version installed</h6>
+<p class="console">django-admin --version </p>
+</div>
+</section>
+<p><br /><br /><br /></p>
 
-<!-- ########################## Categories Page ########################## -->
-	
+<h3 id="3-create-the-django-project">3. Create the Django Project</h3>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
 
+<div class="terminal-home">
+ <p class="console">django-admin startproject my_website</p>
+ <h6 class="hashed"># cd into the project: </h6>
+ <p class="console">cd my_website</p>
+ <h6 class="hashed">Run the development server to make sure everything is ok so far</h6>
+ <p class="console">python manage.py runserver</p>
+</div>
+</section>
+<p><br /></p>
+
+<p>Now if you navigate to <a href="http://localhost:8000/" target="_blank">http://localhost:8000/</a> on your browser and you should see something like this:</p>
+
+<p><img srcset="   /assets/img/django_project_page.png 1.5x,   /assets/img/django_project_page.png 3.5x " alt="missing image" />
+<br /><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Now close the development server with Ctrl + C 
+</code></pre></div></div>
+
+<h3 id="4-create-a-django-app">4. Create a Django App</h3>
+<p>A django project can have multiple apps in it. For example, you can have an ecommerce app and a blog app within one project. With this approach, Django allows you to manage the apps independently and you can easily move your apps into other projects if need be.</p>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+ <p class="console">python manage.py startapp blog</p>
+</div>
+</section>
+<p><br /><br /><br /></p>
+
+<p>Open the settings.py file and specify the allowed hosts as well as add the blog app to installed apps. You should have something similar to this:
+<img srcset="   /assets/img/blog_app_settings.png 1x,   /assets/img/blog_app_settings.png 2x " alt="missing image" />
+<br /><br /></p>
+
+<p>At this point, the project tree should resemble this:
+<img srcset="   /assets/img/blog_app_tree.png 1x,   /assets/img/blog_app_tree.png 2x " alt="missing image" />
+<br /><br /></p>
+
+<h3 id="6-create-a-templates-directory">6. Create a Templates Directory</h3>
+<p>If you are familiar with Ruby on Rails, Templates in Django are the equivalent of Views in Rails. Basically, this is where the HTML files go. Open the blog directory and create a directory called templates.</p>
+
+<h3 id="7-create-a-blog-sub-directory">7. Create a Blog Sub-Directory</h3>
+<p>Within the templates directory, create a sub-directory called blog. For every app in your project, you must create a sub-directory within the templates directory with the same name as your app. For instance, if we created another app in our project called ecommerce, we would then create a sub-directory inside templates directory called ecommerce.</p>
+
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+ <h6 class="hashed">#Install venv</h6>
+ <p class="console">sudo apt install -y python3-venv</p>
+ <h6 class="hashed">#Create a directory called environments or any other name</h6>
+ <p class="console">mkdir environments</p>
+ <h6 class="hashed">#Navigate into the directory</h6>
+ <p class="console">cd environments</p>
+ <h6 class="hashed">#Create an environment directory. Replace "my_env" with the name you prefer</h6>
+ <p class="console">python3 -m venv my_env</p>
   
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
-
-
-
-<!-- ########################## Sub Categories Page ########################## -->
-
-
-  
-
-      
-        
-          
-                    
-        
-          
-                    
-        
-          
-                    
-        
-          
-                    
-        
-          
-                    
-        
-        
-
-  
-
-  
-
-      
-        
-          
-                    
-        
-          
-                    
-        
-          
-                    
-        
-          
-                    
-        
-        
-
-  
-
-  
-
-      
-        
-          
-                    
-        
-          
-                    
-        
-        
-
-  
-
-  
-
-      
-        
-          
-                    
-        
-        
-
-  
-
-  
-
-      
-        
-          
-                    
-        
-          
-                    
-        
-        
-
-  
-
-  
-
-      
-        
-          
-                    
-        
-          
-                    
-        
-        
-
-  
-
-  
-
-      
-        
-          
-                    
-        
-        
-
-  
-
-  
-
-      
-        
-          
-                    
-        
-        
-
-  
-
-  
-
-      
-        
-          
-                    
-        
-        
-
-  
-
-
-
-
-<!-- ########################## Post Type Page ########################## -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="col-sm-6 p-r-25 p-r-15-sr991">
-<!-- Item latest -->	
-<div class="m-b-45">
-<a href="/category/frameworks/ruby-on-rails/theories/202006/ruby-on-rails-best-practices" class="wrap-pic-w hov1 trans-03">
-<img src="https://drive.google.com/uc?id=1BSD09VUFcwg9TCVsF846b8UnJtcJHfWa" alt="IMG" height="200">
-</a>
-
-<div class="p-t-16">
-<h5 class="p-b-5">
-<a href="/category/frameworks/ruby-on-rails/theories/202006/ruby-on-rails-best-practices" class="f1-m-3 cl2 hov-cl10 trans-03">
-Ruby on Rails Best Practices
-</a>
-</h5>
-
-<span class="cl8">
-<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
-by Denis Kobare
-</a>
-
-<span class="f1-s-3 m-rl-3">
--
+</div>
+</section>
+<p><br /><br /><br /></p>
+
+<h3 id="6-activate-your-environment">6. Activate Your Environment</h3>
+<p>You need to activate the envirinment to use it</p>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+ <h6 class="hashed">#call the activate script</h6>
+ <p class="console">source my_env/bin/activate</p>
+ <h6 class="hashed">#NB: Within the virtual environment, you can use the command python instead of python3, and pip instead of pip3</h6> 
+</div>
+</section>
+<p><br /><br /><br /></p>
+
+<p>With that, the environment is ready to use!<br /><br /></p>
+
+<h3 id="6-create-a-simple-text-game-and-play">6. Create a Simple Text Game and Play</h3>
+
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+ <h6 class="hashed">#Create a file</h6>
+ <p class="console">gedit text_game.py</p>
+</div>
+</section>
+<p><br /><br /><br /></p>
+
+<p>Copy the code below and save it in that file.
+<button onclick="copyCodeToClipboard()" class="btn btn-warning btn-sm float-right">Copy</button></p>
+<div id="output"></div>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">time</span> <span class="c1">#Imports a module to add a pause
 </span>
+<span class="c1">#Figuring out how users might respond
+</span><span class="n">answer_A</span> <span class="o">=</span> <span class="p">[</span><span class="s">"A"</span><span class="p">,</span> <span class="s">"a"</span><span class="p">]</span>
+<span class="n">answer_B</span> <span class="o">=</span> <span class="p">[</span><span class="s">"B"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">]</span>
+<span class="n">answer_C</span> <span class="o">=</span> <span class="p">[</span><span class="s">"C"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">]</span>
+<span class="n">yes</span> <span class="o">=</span> <span class="p">[</span><span class="s">"Y"</span><span class="p">,</span> <span class="s">"y"</span><span class="p">,</span> <span class="s">"yes"</span><span class="p">]</span>
+<span class="n">no</span> <span class="o">=</span> <span class="p">[</span><span class="s">"N"</span><span class="p">,</span> <span class="s">"n"</span><span class="p">,</span> <span class="s">"no"</span><span class="p">]</span>
 
-<span class="f1-s-3">
-June 2020
+<span class="c1">#Grabbing objects
+</span><span class="n">sword</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">flower</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">required</span> <span class="o">=</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Use only A, B, or C</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span> <span class="c1">#Cutting down on duplication
 </span>
-</span>
+<span class="c1">#The story is broken into sections, starting with "intro"
+</span><span class="k">def</span> <span class="nf">intro</span><span class="p">():</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"After a drunken night out with friends, you awaken the "</span>
+  <span class="s">"next morning in a thick, dank forest. Head spinning and "</span> 
+  <span class="s">"fighting the urge to vomit, you stand and marvel at your new, "</span>
+  <span class="s">"unfamiliar setting. The peace quickly fades when you hear a "</span>
+  <span class="s">"grotesque sound emitting behind you. A slobbering orc is "</span>
+  <span class="s">"running towards you. You will:"</span><span class="p">)</span>
+  <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"""  A. Grab a nearby rock and throw it at the orc
+  B. Lie down and wait to be mauled
+  C. Run"""</span><span class="p">)</span>
+  <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt;&gt; "</span><span class="p">)</span> <span class="c1">#Here is your first choice.
+</span>  <span class="k">if</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_A</span><span class="p">:</span>
+    <span class="n">option_rock</span><span class="p">()</span>
+  <span class="k">elif</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_B</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Welp, that was quick. "</span>
+    <span class="s">"</span><span class="se">\n\n</span><span class="s">You died!"</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_C</span><span class="p">:</span>
+    <span class="n">option_run</span><span class="p">()</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">required</span><span class="p">)</span>
+    <span class="n">intro</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">option_rock</span><span class="p">():</span> 
+  <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">The orc is stunned, but regains control. He begins "</span>
+  <span class="s">"running towards you again. Will you:"</span><span class="p">)</span>
+  <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"""  A. Run
+  B. Throw another rock
+  C. Run towards a nearby cave"""</span><span class="p">)</span>
+  <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt;&gt; "</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_A</span><span class="p">:</span>
+    <span class="n">option_run</span><span class="p">()</span>
+  <span class="k">elif</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_B</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You decided to throw another rock, as if the first "</span> 
+    <span class="s">"rock thrown did much damage. The rock flew well over the "</span>
+    <span class="s">"orcs head. You missed. </span><span class="se">\n\n</span><span class="s">You died!"</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_C</span><span class="p">:</span>
+    <span class="n">option_cave</span><span class="p">()</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">required</span><span class="p">)</span>
+    <span class="n">option_rock</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">option_cave</span><span class="p">():</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You were hesitant, since the cave was dark and "</span>
+  <span class="s">"ominous. Before you fully enter, you notice a shiny sword on "</span>
+  <span class="s">"the ground. Do you pick up a sword. Y/N?"</span><span class="p">)</span>
+  <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt;&gt; "</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">yes</span><span class="p">:</span>
+    <span class="n">sword</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#adds a sword
+</span>  <span class="k">else</span><span class="p">:</span>
+    <span class="n">sword</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">What do you do next?"</span><span class="p">)</span>
+  <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"""  A. Hide in silence
+  B. Fight
+  C. Run"""</span><span class="p">)</span>
+  <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt;&gt; "</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_A</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Really? You're going to hide in the dark? I think "</span>
+    <span class="s">"orcs can see very well in the dark, right? Not sure, but "</span>
+    <span class="s">"I'm going with YES, so...</span><span class="se">\n\n</span><span class="s">You died!"</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_B</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">sword</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You laid in wait. The shimmering sword attracted "</span>
+    <span class="s">"the orc, which thought you were no match. As he walked "</span>
+    <span class="s">"closer and closer, your heart beat rapidly. As the orc "</span>
+    <span class="s">"reached out to grab the sword, you pierced the blade into "</span>
+    <span class="s">"its chest. </span><span class="se">\n\n</span><span class="s">You survived!"</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span> <span class="c1">#If the user didn't grab the sword
+</span>     <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You should have picked up that sword. You're "</span>
+     <span class="s">"defenseless. </span><span class="se">\n\n</span><span class="s">You died!"</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_C</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">"As the orc enters the dark cave, you sliently "</span>
+    <span class="s">"sneak out. You're several feet away, but the orc turns "</span>
+    <span class="s">"around and sees you running."</span><span class="p">)</span>
+    <span class="n">option_run</span><span class="p">()</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">required</span><span class="p">)</span>
+    <span class="n">option_cave</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">option_run</span><span class="p">():</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You run as quickly as possible, but the orc's "</span>
+  <span class="s">"speed is too great. You will:"</span><span class="p">)</span>
+  <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"""  A. Hide behind boulder
+  B. Trapped, so you fight
+  C. Run towards an abandoned town"""</span><span class="p">)</span>
+  <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt;&gt; "</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_A</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">"You're easily spotted. "</span>
+    <span class="s">"</span><span class="se">\n\n</span><span class="s">You died!"</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_B</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You're no match for an orc. "</span>
+    <span class="s">"</span><span class="se">\n\n</span><span class="s">You died!"</span><span class="p">)</span>
+  <span class="k">elif</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">answer_C</span><span class="p">:</span>
+    <span class="n">option_town</span><span class="p">()</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="n">required</span><span class="p">)</span>
+    <span class="n">option_run</span><span class="p">()</span>
+    
+<span class="k">def</span> <span class="nf">option_town</span><span class="p">():</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">While frantically running, you notice a rusted "</span>
+  <span class="s">"sword lying in the mud. You quickly reach down and grab it, "</span>
+  <span class="s">"but miss. You try to calm your heavy breathing as you hide "</span>
+  <span class="s">"behind a delapitated building, waiting for the orc to come "</span>
+  <span class="s">"charging around the corner. You notice a purple flower "</span>
+  <span class="s">"near your foot. Do you pick it up? Y/N"</span><span class="p">)</span>
+  <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt;&gt; "</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">choice</span> <span class="ow">in</span> <span class="n">yes</span><span class="p">:</span>
+    <span class="n">flower</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">#adds a flower
+</span>  <span class="k">else</span><span class="p">:</span>
+    <span class="n">flower</span> <span class="o">=</span> <span class="mi">0</span>
+  <span class="k">print</span> <span class="p">(</span><span class="s">"You hear its heavy footsteps and ready yourself for "</span>
+  <span class="s">"the impending orc."</span><span class="p">)</span>
+  <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">flower</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">You quickly hold out the purple flower, somehow "</span>
+    <span class="s">"hoping it will stop the orc. It does! The orc was looking "</span>
+    <span class="s">"for love. "</span>
+    <span class="s">"</span><span class="se">\n\n</span><span class="s">This got weird, but you survived!"</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span> <span class="c1">#If the user didn't grab the sword
+</span>     <span class="k">print</span> <span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Maybe you should have picked up the flower. "</span>
+     <span class="s">"</span><span class="se">\n\n</span><span class="s">You died!"</span><span class="p">)</span>
+
+<span class="n">intro</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p><br /><br /></p>
+
+<h3 id="7-run-the-game-and-enjoy">7. Run the Game and Enjoy</h3>
+<section class="terminal-container terminal-fixed-top">
+<header class="terminal">
+<span class="button red"></span>
+<span class="button yellow"></span>
+<span class="button green"></span>
+user@local_machine
+</header>
+
+<div class="terminal-home">
+<p class="console">python text_game.py</p>
 </div>
-</div>
-</div>
+</section>
+<p><br /><br /><br /></p>
 
-  
+<p>That’s it! You have successfully set up, configured and tested python.</p>
 
+<p><em>See you in the next tuts</em></p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-<!-- Pagination --> <!--
-<div class="flex-wr-s-c m-rl--7 p-t-15">
-<a href="#" class="flex-c-c pagi-item hov-btn1 trans-03 m-all-7 pagi-active">1</a>
-<a href="#" class="flex-c-c pagi-item hov-btn1 trans-03 m-all-7">2</a>
-</div> -->
-</div>
 
 </section>
 
