@@ -10,18 +10,18 @@ module Jekyll
       if site.layouts.key? 'category_index'
         dir = site.config['category_dir'] || 'category'
         content_categories.each do |name, category|
-            puts "Look here #{name.keys.join()}"
+           # puts "Look here #{name.keys.join()}"
             category_folder = name.keys.join().gsub(" ", "-").downcase
             site.pages << CategoryPage.new(site, site.source, File.join(dir, category_folder), category_folder) 
                         
           category.values.each do |cat|
             cat.each do |sub_cat|
-              puts sub_cat.values[0]
+            #  puts sub_cat.values[0]
               sub_category_folder = sub_cat.values[0].gsub(" ", "-").downcase
               site.pages << CategoryPage.new(site, site.source, File.join(dir, "#{category_folder}/#{sub_category_folder}"), sub_category_folder)                           
               sub_cat.values[1].each do |subcat_list|
-                puts subcat_list
-                puts "XXXXXXX #{subcat_list.values[0]}"
+              #  puts subcat_list
+              #  puts "XXXXXXX #{subcat_list.values[0]}"
                 subcat_list_folder = subcat_list.values[0].gsub(" ", "-").downcase
                 site.pages << CategoryPage.new(site, site.source, File.join(dir, "#{category_folder}/#{sub_category_folder}/#{subcat_list_folder}"), subcat_list_folder)
               end

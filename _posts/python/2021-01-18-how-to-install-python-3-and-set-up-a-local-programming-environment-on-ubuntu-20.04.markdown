@@ -21,7 +21,7 @@ tags:
 Ubuntu 20.04 ships with Python 3 pre-installed. This guide explains how to configure and set up environments for python projects.
 
 
-To use Python 3 on the terminal, you have to explicitly use the command "python3"
+    NB: To use Python 3 on the terminal, you have to explicitly use the command "python3"
 
 
 ### 1. Update Your System
@@ -65,7 +65,7 @@ user@local_machine
 </section><br><br><br>
 
 
-### 2. Install PIP
+### 3. Install PIP
 PIP is a package manager for Python packages, or modules.
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
@@ -84,7 +84,7 @@ user@local_machine
 </section><br><br><br>
 
 
-### 3. Install Dependencies
+### 4. Install Dependencies
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
 <span class="button red"></span>
@@ -100,7 +100,7 @@ user@local_machine
 
 
 
-### 4. Set Up a Virtual Environment
+### 5. Set Up a Virtual Environment
 A virtual environment allows you to manage separate package installations for different projects. Basically, it isolates your project dependencies from the broader context of your local machine, to avoid conflicts.
 To achieve that, we'll use a tool called venv. 
 <section class="terminal-container terminal-fixed-top">
@@ -120,7 +120,7 @@ user@local_machine
 </section><br><br><br>
 
 
-### 5. Install virtualenvwrapper
+### 6. Install virtualenvwrapper
 Virtualenvwrapper is a wrapper script around the main virtualenv tool. It helps to organize all of your virtual environments in one location, provides methods to help you easily create, delete, and copy environments and also provides a single command to switch between environments.
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
@@ -140,7 +140,7 @@ user@local_machine
 </section><br><br><br>
 
 
-### 6. Edit  the ~/.bashrc file or the ~/.profile file 
+### 7. Edit  the ~/.bashrc file or the ~/.profile file 
 Using that path, add the following four lines to your shell’s startup file. If you’re using the Bash shell, you would place these lines in either the ~/.bashrc file or the ~/.profile file.
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
@@ -231,7 +231,7 @@ user@local_machine
 </section><br><br><br>
 
 
-### 7. Create a Simple Text Game and Play 
+### 8. Create a Simple Text Game and Play 
 
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
@@ -402,7 +402,7 @@ intro()
 <br><br>
 
 
-### 8. Run the Game and Enjoy
+### 9. Run the Game and Enjoy
 <section class="terminal-container terminal-fixed-top">
 <header class="terminal">
 <span class="button red"></span>

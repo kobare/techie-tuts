@@ -40,6 +40,7 @@ mailchimp: github.us8.list-manage.com/subscribe/post?u=59f41437739e3691e8b775c88
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag  
 
 # Exclude from processing.
 # The following items will not be processed, by default.
