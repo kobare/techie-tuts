@@ -60,7 +60,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- Begin Jekyll SEO tag v2.7.1 -->
-<meta name="generator" content="Jekyll v4.1.1" />
+<meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04" />
 <meta name="author" content="Denis Kobare" />
 <meta property="og:locale" content="en_US" />
@@ -74,7 +74,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04" />
 <script type="application/ld+json">
-{"dateModified":"2021-01-18T09:45:15+03:00","datePublished":"2021-01-18T09:45:15+03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://techietuts.com/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04"},"description":"Ubuntu 20.04 ships with Python 3 pre-installed. This guide explains how to configure and set up environments for python projects.","author":{"@type":"Person","name":"Denis Kobare"},"url":"http://techietuts.com/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04","headline":"How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04","@context":"https://schema.org"}</script>
+{"headline":"How To Install Python 3 and Set Up a Local Programming Environment on Ubuntu 20.04","dateModified":"2021-01-18T09:45:15+03:00","datePublished":"2021-01-18T09:45:15+03:00","@type":"BlogPosting","description":"Ubuntu 20.04 ships with Python 3 pre-installed. This guide explains how to configure and set up environments for python projects.","mainEntityOfPage":{"@type":"WebPage","@id":"http://techietuts.com/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04"},"url":"http://techietuts.com/category/programming/python/setup-and-configurations/202101/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-20.04","author":{"@type":"Person","name":"Denis Kobare"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -3445,8 +3445,11 @@ user@local_machine
 <div class="terminal-home">
  <h6 class="hashed">#Install virtualenvwrapper</h6>
  <p class="console">pip3 install virtualenvwrapper</p>
- <h6 class="hashed">#Get the exact location of virtualenvwrapper.sh</h6>
+ <h6 class="hashed">#Get the exact location of virtualenvwrapper.sh. You will replace the path on line 4 in step 7 below with this path.</h6>
  <p class="console">which virtualenvwrapper.sh</p>
+ <h6 class="hashed">/usr/local/bin/virtualenvwrapper.sh</h6><br />
+ <h6 class="hashed">#Alternatively you can do</h6>   
+ <p class="console">find / -name virtualenvwrapper.sh</p> 
  <h6 class="hashed">/usr/local/bin/virtualenvwrapper.sh</h6>  
 </div>
 </section>
