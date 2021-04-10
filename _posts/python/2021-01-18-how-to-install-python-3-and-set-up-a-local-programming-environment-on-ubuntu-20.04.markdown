@@ -133,8 +133,11 @@ user@local_machine
 <div class="terminal-home">
  <h6 class="hashed">#Install virtualenvwrapper</h6>
  <p class="console">pip3 install virtualenvwrapper</p>
- <h6 class="hashed">#Get the exact location of virtualenvwrapper.sh</h6>
+ <h6 class="hashed">#Get the exact location of virtualenvwrapper.sh. You will replace the path on line 4 in step 7 below with this path.</h6>
  <p class="console">which virtualenvwrapper.sh</p>
+ <h6 class="hashed">/usr/local/bin/virtualenvwrapper.sh</h6><br>
+ <h6 class="hashed">#Alternatively you can do</h6>   
+ <p class="console">find / -name virtualenvwrapper.sh</p> 
  <h6 class="hashed">/usr/local/bin/virtualenvwrapper.sh</h6>  
 </div>
 </section><br><br><br>
