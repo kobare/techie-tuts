@@ -1,0 +1,9 @@
+I"%<!-- Feature post -->
+
+<!-- <img src="/assets/img/landing_image.svg" alt="LOGO" > -->
+
+<video id="video" role="presentation" preload="auto" playsinline="" crossorigin="anonymous" muted="" autoplay="" loop="" class="blur">
+  <source src="assets/videos/coding.mp4" type="video/mp4" />
+</video>
+
+:ET

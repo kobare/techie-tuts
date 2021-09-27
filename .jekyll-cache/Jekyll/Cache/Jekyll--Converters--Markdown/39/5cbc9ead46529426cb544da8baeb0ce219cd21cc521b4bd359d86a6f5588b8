@@ -1,0 +1,11 @@
+I"Þ<body>
+  <div class="bg-video-wrap">
+    <video src="assets/videos/coding.mp4" loop="" muted="" autoplay="">
+    </video>
+    <div class="overlay">
+    </div>
+    <h1>Fullscreen video background
+    </h1>
+  </div>
+</body>
+:ET

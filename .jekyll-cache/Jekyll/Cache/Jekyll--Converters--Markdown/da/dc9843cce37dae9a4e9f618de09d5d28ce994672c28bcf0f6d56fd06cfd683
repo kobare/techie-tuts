@@ -1,0 +1,28 @@
+I"i<!-- Feature post -->
+
+<!-- <img src="/assets/img/landing_image.svg" alt="LOGO" > -->
+
+<div id="videowrapper">
+    <div id="fullScreenDiv">
+       <video id="video" role="presentation" preload="auto" playsinline="" crossorigin="anonymous" muted="" autoplay="" loop="" class="blur">
+            <source src="assets/videos/business_books.mp4" type="video/mp4" />
+            <source src="video/t12.webm" type="video/webm" />
+            <source src="assets/videos/s_ential_ad.mp4" type="video/mp4" />
+        </video> 
+        <div id="videoMessage" class="styling"> 
+	  <h1 class="heading" data-aos="fade-up" data-aos-delay="0">Enhancing Businesses with Tech</h1>
+	  <div class="excerpt" data-aos="fade-up" data-aos-delay="100">
+	</div> 
+        </div>   
+    </div>
+</div>
+
+<section class="bg0">
+<div class="container">
+<div class="row m-rl--1">
+
+</div>
+</div>
+</section>
+
+:ET
